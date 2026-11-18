@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0d1117">
+<title>ECOLIA H — Présentation</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',Roboto,sans-serif; background:#0d1117; color:#e6f1ff; padding:16px; padding-bottom:40px; }
+.wrap { max-width:500px; margin:0 auto; }
+
+.topbar { display:flex; align-items:center; gap:10px; margin-bottom:18px; }
+.btn-retour { padding:8px 16px; background:#161b22; color:#fff; border:1px solid #21262d; border-radius:20px; cursor:pointer; font-size:14px; text-decoration:none; }
+
+.hero { text-align:center; margin-bottom:22px; }
+.hero .logo { font-size:56px; margin-bottom:6px; }
+.hero h1 { color:#00ff88; font-size:28px; margin-bottom:4px; }
+.hero p { color:#8b949e; font-size:14px; line-height:1.5; }
+
+.bloc { background:#161b22; border:1px solid #21262d; border-radius:14px; padding:18px; margin-bottom:14px; }
+.bloc h2 { color:#00ccff; font-size:16px; margin-bottom:10px; }
+.bloc p, .bloc li { font-size:13px; color:#c0c8d0; line-height:1.65; }
+.bloc ul, .bloc ol { margin-left:20px; margin-top:6px; }
+.bloc li { margin-bottom:6px; }
+.bloc strong { color:#00ff88; }
+.note { font-size:12px; color:#8b949e; margin-top:10px; line-height:1.5; }
+
+.vitrine { display:flex; align-items:center; gap:12px; background:#0d1117; border:1px solid #21262d; border-radius:12px; padding:12px; margin-top:10px; cursor:pointer; }
+.vitrine:active { background:#21262d; }
+.vitrine .ico { font-size:30px; flex-shrink:0; }
+.vitrine .info { flex:1; min-width:0; }
+.vitrine .titre { font-weight:bold; font-size:14px; margin-bottom:2px; }
+.vitrine .desc { font-size:12px; color:#8b949e; }
+.vitrine .go { flex-shrink:0; padding:6px 12px; border-radius:6px; background:#0099ff; color:#fff; font-size:11px; font-weight:bold; }
+
+.menu-ex { display:flex; flex-direction:column; gap:8px; margin-top:10px; }
+.menu-ex .it { background:#0d1117; border:1px solid #21262d; border-radius:12px; padding:12px 14px; }
+.menu-ex .it b { display:block; font-size:14px; color:#e6f1ff; margin-bottom:3px; }
+.menu-ex .it span { font-size:12px; color:#8b949e; line-height:1.5; }
+
+.q { margin-bottom:16px; }
+.q .lbl { font-size:13px; font-weight:bold; color:#e6f1ff; margin-bottom:8px; }
+.chips { display:flex; flex-wrap:wrap; gap:8px; }
+.chip { padding:9px 14px; border-radius:20px; background:#0d1117; border:1px solid #2a3444; color:#ccc; font-size:13px; cursor:pointer; user-select:none; }
+.chip.on { background:#00ff88; color:#121212; border-color:#00ff88; font-weight:bold; }
+
+.btn-wa { width:100%; padding:16px; border-radius:12px; border:none; background:#25d366; color:#06210f; font-weight:bold; font-size:16px; cursor:pointer; margin-top:6px; }
+.btn-wa:disabled { background:#21262d; color:#666; cursor:not-allowed; }
+.btn-dl { display:block; width:100%; padding:14px; border-radius:12px; background:#00ff88; color:#121212; font-weight:bold; font-size:15px; text-align:center; text-decoration:none; margin-top:12px; }
+
+#reader { display:none; position:fixed; inset:0; z-index:99999; background:#0d1117; flex-direction:column; }
+#reader.open { display:flex; }
+#reader .bar { padding:12px; background:#161b22; border-bottom:1px solid #21262d; display:flex; align-items:center; gap:10px; flex-shrink:0; }
+#reader .bar button { padding:8px 16px; background:#00ff88; color:#121212; border:none; border-radius:20px; font-weight:bold; cursor:pointer; font-size:14px; }
+#reader .bar span { font-size:14px; font-weight:bold; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#reader iframe { flex:1; border:none; background:#fff; width:100%; }
+
+.foot { text-align:center; font-size:11px; color:#666; margin-top:20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+    <div class="topbar">
+        <a class="btn-retour" id="btnRetour" href="https://ecolia-course.github.io/">← Retour</a>
+    </div>
+
+    <div class="hero">
+        <div class="logo">🎓</div>
+        <h1>ECOLIA H</h1>
+        <p>Des guides pour réussir les exercices d'examen.<br>Formules, méthodes et pièges à éviter.</p>
+    </div>
+
+    <div class="bloc">
+        <h2>✨ C'est quoi, ECOLIA H ?</h2>
+        <p>Des <strong>guides pour réussir les exercices d'examen</strong>. Pour chaque notion, on te donne les formules, on t'explique <strong>quand les utiliser</strong>, on te montre <strong>les pièges classiques</strong> des exercices et la bonne méthode. Tu les télécharges une seule fois, puis tu les lis <strong>sans connexion</strong>, quand tu veux.</p>
+        <p class="note">L'accès se fait par autorisation de ton identifiant. C'est un accès payant, pensé pour être simple et adapté à ta situation.</p>
+    </div>
+
+    <div class="bloc">
+        <h2>👀 Jette un œil à 3 guides</h2>
+        <p>Touche un guide pour le lire ici, sans rien télécharger.</p>
+        <div id="vitrineListe"></div>
+        <p class="note">Les autres guides se débloquent une fois ton identifiant autorisé.</p>
+    </div>
+
+    <div class="bloc">
+        <h2>☰ Les 3 boutons du menu</h2>
+        <p>Dans l'application, touche le bouton rond <strong>☰</strong> en bas à droite :</p>
+        <div class="menu-ex">
+            <div class="it"><b>🆔 Mon ID</b><span>Ton identifiant sur cet appareil. C'est lui qui est autorisé. Tu peux y revérifier ton autorisation avec « 🔄 ».</span></div>
+            <div class="it"><b>📚 Voir les cours H</b><span>Le catalogue des guides ECOLIA H, classé par niveau. Ils se téléchargent une fois ton ID autorisé.</span></div>
+            <div class="it"><b>📤 Partager ECOLIA</b><span>Pour faire connaître l'application autour de toi.</span></div>
+        </div>
+    </div>
+
+    <div class="bloc">
+        <h2>🔓 Comment accéder aux guides H ?</h2>
+        <ol>
+            <li>Réponds aux 3 petites questions ci-dessous.</li>
+            <li>Tu continues sur <strong>WhatsApp</strong> : ton message est déjà prêt, ton identifiant y est joint automatiquement.</li>
+            <li>On te répond avec les conditions qui correspondent à ta situation.</li>
+            <li>Une fois autorisé : ☰ → 🆔 Mon ID → <strong>🔄 Revérifier</strong>, puis télécharge tes guides H.</li>
+        </ol>
+    </div>
+
+    <div class="bloc">
+        <h2>💬 Dis-nous qui tu es</h2>
+        <p style="margin-bottom:14px;">Ça nous aide à te proposer la bonne formule.</p>
+
+        <div class="q">
+            <div class="lbl">1. Tu es…</div>
+            <div class="chips" data-q="profil">
+                <div class="chip" data-v="Élève">🎒 Élève</div>
+                <div class="chip" data-v="Parent">👪 Parent</div>
+                <div class="chip" data-v="Enseignant">🧑‍🏫 Enseignant</div>
+                <div class="chip" data-v="Responsable d'école ou de classe">🏫 Responsable d'école / de classe</div>
+                <div class="chip" data-v="Autre">Autre</div>
+            </div>
+        </div>
+
+        <div class="q">
+            <div class="lbl">2. Ton but avec ECOLIA H ?</div>
+            <div class="chips" data-q="but">
+                <div class="chip" data-v="M'entraîner aux exercices et éviter les pièges">✍️ M'entraîner aux exercices</div>
+                <div class="chip" data-v="Préparer un examen (EXETAT)">🎯 Préparer un examen</div>
+                <div class="chip" data-v="Enseigner / préparer mes leçons">🧑‍🏫 Enseigner</div>
+                <div class="chip" data-v="Proposer ECOLIA H à un groupe">👥 Pour un groupe</div>
+                <div class="chip" data-v="Découvrir">🔍 Découvrir</div>
+            </div>
+        </div>
+
+        <div class="q">
+            <div class="lbl">3. C'est pour…</div>
+            <div class="chips" data-q="nombre">
+                <div class="chip" data-v="Moi seul(e)">1 personne (moi)</div>
+                <div class="chip" data-v="Un petit groupe (2 à 10 personnes)">Un petit groupe</div>
+                <div class="chip" data-v="Une classe ou plus">Une classe ou plus</div>
+            </div>
+        </div>
+
+        <button class="btn-wa" id="btnWa" disabled onclick="ouvrirWhatsApp()">💬 Continuer sur WhatsApp</button>
+        <p class="note" id="noteId"></p>
+    </div>
+
+    <div class="bloc">
+        <h2>📲 Pas encore l'application ?</h2>
+        <p>Sur Android, nous te recommandons de télécharger l'<strong>APK classique</strong> plutôt que la version lite.</p>
+        <a class="btn-dl" href="https://ecolia-course.github.io/">📲 Télécharger ECOLIA</a>
+    </div>
+
+    <p class="foot">ECOLIA — Apprendre autrement · RDC</p>
+</div>
+
+<!-- LECTEUR (aperçu des cours) -->
+<div id="reader">
+    <div class="bar">
+        <button onclick="fermerLecteur()">← Retour</button>
+        <span id="readerTitre"></span>
+    </div>
+    <iframe id="readerFrame" title="Aperçu du guide"></iframe>
+</div>
+
+<script>
+/* ═══════════ CONFIG (à adapter si besoin) ═══════════ */
+var WHATSAPP_NUM = '243972718390';
+var SITE_URL     = 'https://ecolia-course.github.io/';
+
+/* 3 cours en vitrine — fichiers dans le même dossier que cette page. */
+var COURS_VITRINE = [
+    { fichier: 'HSVT7.html',     icone: '🧬', titre: 'SVT 7',      desc: 'Guide d\'exercices · aperçu en ligne' },
+    { fichier: 'HMaths8.html',   icone: '📐', titre: 'Maths 8',    desc: 'Guide d\'exercices · aperçu en ligne' },
+    { fichier: 'HPhysique1.html', icone: '⚛️', titre: 'Physique 1', desc: 'Guide d\'exercices · aperçu en ligne' }
+];
+
+/* ═══════════ ID (reçu depuis l'application, jamais affiché) ═══════════ */
+var ID_RE = /^ECOLIA-[0-9A-F]{12}-[0-9A-F]{12}$/;
+var ID_APP = '';
+(function () {
+    try {
+        var p = new URLSearchParams(location.search);
+        var id = (p.get('id') || '').trim().toUpperCase();
+        if (ID_RE.test(id)) {
+            ID_APP = id;
+            try { sessionStorage.setItem('ecolia_h_id', id); } catch (e) {}
+        } else {
+            try { var s = sessionStorage.getItem('ecolia_h_id'); if (s && ID_RE.test(s)) ID_APP = s; } catch (e) {}
+        }
+        /* Retire l'ID de l'adresse visible. */
+        if (location.search && window.history && history.replaceState) {
+            history.replaceState(history.state, '', location.pathname);
+        }
+    } catch (e) {}
+    var note = document.getElementById('noteId');
+    note.textContent = ID_APP
+        ? 'Ton identifiant sera joint automatiquement à ton message.'
+        : 'Ouvre cette page depuis l\'application pour joindre automatiquement ton identifiant.';
+})();
+
+/* ═══════════ BOUTON RETOUR ═══════════ */
+document.getElementById('btnRetour').addEventListener('click', function (e) {
+    if (window.history.length > 1) { e.preventDefault(); history.back(); }
+});
+
+/* ═══════════ VITRINE ═══════════ */
+(function () {
+    var liste = document.getElementById('vitrineListe');
+    COURS_VITRINE.forEach(function (c) {
+        var d = document.createElement('div');
+        d.className = 'vitrine';
+        d.innerHTML = '<div class="ico">' + c.icone + '</div>' +
+            '<div class="info"><div class="titre">' + c.titre + '</div><div class="desc">' + c.desc + '</div></div>' +
+            '<div class="go">📖 Lire</div>';
+        d.onclick = function () { ouvrirLecteur(c); };
+        liste.appendChild(d);
+    });
+})();
+
+var lecteurOuvert = false;
+function ouvrirLecteur(c) {
+    document.getElementById('readerTitre').textContent = c.titre;
+    document.getElementById('readerFrame').src = './' + c.fichier;
+    document.getElementById('reader').classList.add('open');
+    if (!lecteurOuvert) {
+        lecteurOuvert = true;
+        try { history.pushState({ lecteur: 1 }, ''); } catch (e) {}
+    }
+}
+function masquerLecteur() {
+    document.getElementById('reader').classList.remove('open');
+    document.getElementById('readerFrame').src = 'about:blank';
+    lecteurOuvert = false;
+}
+function fermerLecteur() {
+    if (lecteurOuvert && history.state && history.state.lecteur) { history.back(); }
+    else masquerLecteur();
+}
+window.addEventListener('popstate', function () {
+    if (lecteurOuvert) masquerLecteur();
+});
+
+/* ═══════════ FORMULAIRE → WHATSAPP ═══════════ */
+var REPONSES = { profil: '', but: '', nombre: '' };
+
+Array.prototype.forEach.call(document.querySelectorAll('.chips'), function (groupe) {
+    var q = groupe.getAttribute('data-q');
+    Array.prototype.forEach.call(groupe.querySelectorAll('.chip'), function (chip) {
+        chip.addEventListener('click', function () {
+            Array.prototype.forEach.call(groupe.querySelectorAll('.chip'), function (c) { c.classList.remove('on'); });
+            chip.classList.add('on');
+            REPONSES[q] = chip.getAttribute('data-v');
+            document.getElementById('btnWa').disabled = !(REPONSES.profil && REPONSES.but && REPONSES.nombre);
+        });
+    });
+});
+
+function ouvrirWhatsApp() {
+    if (!(REPONSES.profil && REPONSES.but && REPONSES.nombre)) return;
+    var msg = 'Bonjour, je souhaite accéder à ECOLIA H.\n\n' +
+        'Profil : ' + REPONSES.profil + '\n' +
+        'Objectif : ' + REPONSES.but + '\n' +
+        'Pour : ' + REPONSES.nombre + '\n\n' +
+        (ID_APP ? 'Mon ID : ' + ID_APP : 'Mon ID : (à envoyer depuis l\'application : ☰ → Mon ID)');
+    window.location.href = 'https://wa.me/' + WHATSAPP_NUM + '?text=' + encodeURIComponent(msg);
+}
+</script>
+</body>
+</html>
