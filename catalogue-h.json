@@ -1,0 +1,196 @@
+{
+  "categories": [
+    {
+      "id": "h_7e",
+      "nom": "7e Année",
+      "icone": "📗",
+      "sousCategories": [
+        {
+          "id": "h_7e_maths",
+          "nom": "Mathématiques",
+          "cours": [
+            {
+              "id": "h_maths7",
+              "titre": "Mathématiques 7e",
+              "description": "Cours complet de mathématiques — 7e année secondaire.",
+              "icone": "🔢",
+              "niveau": "7e Année",
+              "version": 1,
+              "fichiers": ["HMaths7.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_7e_svt",
+          "nom": "SVT",
+          "cours": [
+            {
+              "id": "h_svt7",
+              "titre": "SVT 7e",
+              "description": "Sciences de la Vie et de la Terre — 7e année secondaire.",
+              "icone": "🌱",
+              "niveau": "7e Année",
+              "version": 1,
+              "fichiers": ["HSVT7.ecolia"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h_8e",
+      "nom": "8e Année",
+      "icone": "📘",
+      "sousCategories": [
+        {
+          "id": "h_8e_maths",
+          "nom": "Mathématiques",
+          "cours": [
+            {
+              "id": "h_maths8",
+              "titre": "Mathématiques 8e",
+              "description": "Cours complet de mathématiques — 8e année secondaire.",
+              "icone": "🔢",
+              "niveau": "8e Année",
+              "version": 1,
+              "fichiers": ["HMaths8.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_8e_svt",
+          "nom": "SVT",
+          "cours": [
+            {
+              "id": "h_svt8",
+              "titre": "SVT 8e",
+              "description": "Sciences de la Vie et de la Terre — 8e année secondaire.",
+              "icone": "🌱",
+              "niveau": "8e Année",
+              "version": 1,
+              "fichiers": ["HSVT8.ecolia"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h_1ere",
+      "nom": "1ère Année",
+      "icone": "📙",
+      "sousCategories": [
+        {
+          "id": "h_1ere_maths_sci",
+          "nom": "Mathématiques Scientifiques",
+          "cours": [
+            {
+              "id": "h_maths_sci1",
+              "titre": "Mathématiques Scientifiques 1ère",
+              "description": "Mathématiques — section scientifique, 1ère année.",
+              "icone": "🔢",
+              "niveau": "1ère Année",
+              "version": 1,
+              "fichiers": ["HMathsScientifiques1.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_1ere_physique",
+          "nom": "Physique",
+          "cours": [
+            {
+              "id": "h_physique1",
+              "titre": "Physique 1ère",
+              "description": "Cours de physique — 1ère année.",
+              "icone": "⚙️",
+              "niveau": "1ère Année",
+              "version": 1,
+              "fichiers": ["HPhysique1.ecolia"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h_2e",
+      "nom": "2e Année",
+      "icone": "📕",
+      "sousCategories": [
+        {
+          "id": "h_2e_physique",
+          "nom": "Physique",
+          "cours": [
+            {
+              "id": "h_physique2",
+              "titre": "Physique 2e",
+              "description": "Cours de physique — 2e année.",
+              "icone": "⚙️",
+              "niveau": "2e Année",
+              "version": 1,
+              "fichiers": ["HPhysique2.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_2e_chimie",
+          "nom": "Chimie",
+          "cours": [
+            {
+              "id": "h_chimie2",
+              "titre": "Chimie 2e",
+              "description": "Cours de chimie — 2e année.",
+              "icone": "⚛️",
+              "niveau": "2e Année",
+              "version": 1,
+              "fichiers": ["HChimie2.ecolia"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h_3e",
+      "nom": "3e Année",
+      "icone": "📓",
+      "sousCategories": [
+        {
+          "id": "h_3e_physique",
+          "nom": "Physique",
+          "cours": [
+            {
+              "id": "h_physique3",
+              "titre": "Physique 3e",
+              "description": "Cours de physique — 3e année.",
+              "icone": "⚙️",
+              "niveau": "3e Année",
+              "version": 1,
+              "fichiers": ["HPhysique3.ecolia"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h_4e",
+      "nom": "4e Année (EXETAT)",
+      "icone": "📔",
+      "sousCategories": [
+        {
+          "id": "h_4e_maths_sci",
+          "nom": "Mathématiques Scientifiques",
+          "cours": [
+            {
+              "id": "h_maths_sci4",
+              "titre": "Mathématiques Scientifiques 4e",
+              "description": "Mathématiques — section scientifique, 4e année (préparation EXETAT).",
+              "icone": "🔢",
+              "niveau": "4e Année",
+              "version": 1,
+              "fichiers": ["HMathsScientifiques4.ecolia"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
