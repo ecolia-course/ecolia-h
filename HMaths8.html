@@ -162,580 +162,457 @@ const COURSE_TITLE = "MATHS";
 
 const slides = [
   {
-    title: "ECOLIA H : comment utiliser ce cours",
+    title: "Sommaire et logique de l’épreuve",
     content: `
-      <div class="bloc signal">
-        <div class="bloc-label">Une autre façon de préparer l'examen</div>
-        <p>Les cours habituels d'ECOLIA t'apprennent les mathématiques : les notions, les règles, les propriétés et les formules.</p>
-        <p><strong>ECOLIA H t'apprend à utiliser ces connaissances dans les exercices.</strong> Tu vas apprendre à reconnaître ce qu'on te demande, à repérer les données utiles et à choisir une méthode de résolution.</p>
-      </div>
-
-      <h3>Si tu ne maîtrises pas encore une notion</h3>
-      <p>Tu peux retourner dans le cours classique correspondant sur ECOLIA. Par exemple, si tu as oublié comment calculer l'aire d'un triangle, révise d'abord cette notion, puis reviens ici pour apprendre à l'utiliser dans différents exercices.</p>
-
-      <div class="bloc info">
-        <strong>Ce que tu vas entraîner ici</strong>
-        <ul>
-          <li>Reconnaître les formes d'exercices possibles à l'examen.</li>
-          <li>Comprendre les données et les symboles utilisés.</li>
-          <li>Choisir la bonne méthode, même si elle n'est pas indiquée.</li>
-          <li>Présenter une résolution complète, sans sauter d'étapes.</li>
-          <li>Éviter les pièges et vérifier ton résultat.</li>
-        </ul>
-      </div>
-
-      <p>Tu n'as pas besoin de résoudre les exercices aussi vite qu'un élève expérimenté. Tu dois surtout apprendre à suivre une méthode fiable.</p>
+      <p class="vu-en">📍 Révision générale : programme de mathématiques de 8e année et préparation au TENAFEP.</p>
+      <div class="bloc signal"><div class="bloc-label">Objectif ECOLIA H</div><p>Le but n’est pas seulement de reconnaître une formule. Le but est de savoir résoudre un problème même lorsque la question est présentée d’une manière jamais rencontrée.</p><p>Tu vas apprendre à repérer les indices, choisir le bon outil, éliminer les fausses pistes et vérifier tes résultats.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Les outils étudiés</div><p>Entiers relatifs, puissances, racines carrées, équations, systèmes, théorème de Pythagore, réciproque, transformations, aires, volumes, conversions, statistiques, repérage, proportionnalité et pourcentages.</p><p>Les derniers exercices combinent plusieurs chapitres et contiennent des données inutiles ou des indices indirects.</p></div>
+      <div class="bloc astuce"><div class="bloc-label">Le réflexe en 6 questions</div><p>1) Que me demande-t-on exactement ?</p><p>2) Quelles données sont fournies ?</p><p>3) Quelles données sont inutiles ou cachées dans le texte ?</p><p>4) Quel outil relie les données à la réponse ?</p><p>5) Dois-je convertir ou calculer une donnée intermédiaire ?</p><p>6) Mon résultat est-il plausible et correctement exprimé ?</p></div>
+      <div class="bloc cas"><div class="bloc-label">Attention</div><p>Un exercice peut parler de peinture sans demander une aire, ou parler d’un trajet sans demander la distance parcourue. Lis toujours la question finale avant de choisir une formule.</p></div>
     `
   },
   {
-    title: "Avant de résoudre : lire les données",
+    title: "Entiers relatifs : la règle des signes",
     content: `
-      <h3>Les trois éléments à identifier</h3>
-      <ol>
-        <li><strong>Ce qu'on cherche :</strong> le résultat demandé par l'énoncé.</li>
-        <li><strong>Ce qu'on connaît :</strong> les nombres, les mesures, les relations ou les informations déjà données.</li>
-        <li><strong>Ce qui relie les deux :</strong> la formule ou la méthode qui permet de passer des données au résultat.</li>
-      </ol>
-
-      <div class="bloc exemple">
-        <div class="bloc-label">Exemple de lecture</div>
-        <p>Un commerçant achète 12 cahiers à 500 FC chacun. Il les revend à 650 FC l'unité. Calcule son bénéfice total.</p>
-        <table>
-          <tr><th>Élément</th><th>Valeur</th></tr>
-          <tr><td>Nombre de cahiers</td><td>12</td></tr>
-          <tr><td>Prix d'achat d'un cahier</td><td>500 FC</td></tr>
-          <tr><td>Prix de vente d'un cahier</td><td>650 FC</td></tr>
-          <tr><td>Résultat demandé</td><td>Bénéfice total</td></tr>
-        </table>
-        <p><strong>Attention :</strong> on ne demande pas le prix de vente total. On demande le bénéfice, c'est-à-dire la différence entre les recettes et les dépenses.</p>
+      <p class="vu-en">📍 Vu en leçon : addition, soustraction et multiplication des nombres relatifs.</p>
+      <div class="formule"><div class="f-nom">Soustraire, c’est ajouter l’opposé</div><div class="f-eq">a − (−b) = a + b</div><div class="f-aide">Le signe moins placé devant une parenthèse change le signe du nombre qui s’y trouve.</div><details class="symboles"><summary>Que signifie chaque symbole ?</summary><div class="sym-list"><div class="sym"><b>a</b><span>Un nombre relatif.</span></div><div class="sym"><b>b</b><span>Un autre nombre relatif.</span></div></div></details></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Température qui monte ou descend, dette, bénéfice, perte, altitude au-dessus ou en dessous du niveau de la mer, déplacement vers l’avant ou vers l’arrière.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Calculer une somme de nombres relatifs.</p><p>• Soustraire un nombre négatif.</p><p>• Calculer un produit ou un quotient avec des signes.</p><p>• Traduire une situation de dette, de gain ou de température en opération.</p><p>• Retrouver une valeur initiale après plusieurs changements.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>Somme : mêmes signes, on additionne et on garde le signe. Signes différents, on soustrait et on garde le signe du nombre ayant la plus grande valeur absolue.</p><p>Produit : deux signes pareils donnent plus ; deux signes différents donnent moins.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1 — RECONNAÎTRE</span><div class="bloc-label">Exemple corrigé</div><p>À Goma, la température était de −7 °C le matin. Elle monte de 4 °C. Quelle est la température maintenant ?</p><ol class="etapes"><li>Je cherche la nouvelle température après une hausse.</li><li>J’écris : (−7) + (+4).</li><li>Les signes sont différents : 7 − 4 = 3. Je garde le signe du plus grand en valeur absolue : −.</li><li>Réponse : −3 °C.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4 — COMBINER</span><div class="bloc-label">Exemple corrigé</div><p>Un vendeur commence avec une dette de 5 000 FC. Il rembourse 3 000 FC, puis subit une perte de 2 000 FC. Quel est son bilan ?</p><ol class="etapes"><li>Dette : −5 000. Rembourser enlève une partie de la dette : +3 000. Perte : −2 000.</li><li>Je traduis : −5 000 + 3 000 − 2 000.</li><li>Je calcule : −2 000 − 2 000 = −4 000.</li><li>Réponse : le bilan est de −4 000 FC. Il doit encore 4 000 FC.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges et fausses pistes</div><p>5 − (−3) = 8, et non 2. Le moins devant la parenthèse change le signe.</p><p>(−2) × (−3) = +6, et non −6.</p><p>Ne confonds pas une hausse de température avec une température forcément positive : −7 °C + 4 °C reste négatif.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Décoder sans formule annoncée</div><p>Un plongeur se trouve à −12 m. Il remonte de 5 m, puis descend de 3 m. Où se trouve-t-il ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>(−12) + 5 − 3 = −7 − 3 = −10. Il se trouve à 10 m sous la surface.</p></div></details></div>
+    `
+  },
+  {
+    title: "Puissances : produit, quotient et puissance de puissance",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : les puissances d’un nombre et leurs opérations.</p>
+      <div class="formule"><div class="f-nom">Produit de puissances de même base</div><div class="f-eq">aⁿ × aᵐ = aⁿ⁺ᵐ</div><div class="f-aide">Même base : on garde la base et on additionne les exposants.</div><details class="symboles"><summary>Que signifie chaque symbole ?</summary><div class="sym-list"><div class="sym"><b>a</b><span>La base.</span></div><div class="sym"><b>n et m</b><span>Les exposants.</span></div></div></details></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Multiplication répétée, écriture scientifique simple, très grands nombres, très petits nombres, expressions contenant plusieurs puissances de même base.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Simplifier un produit de puissances.</p><p>• Simplifier un quotient de puissances de même base.</p><p>• Simplifier une puissance élevée à une autre puissance.</p><p>• Calculer une puissance d’exposant zéro ou un.</p><p>• Retrouver un exposant manquant.</p><p>• Réduire une expression contenant plusieurs opérations.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>Quotient : aⁿ ÷ aᵐ = aⁿ⁻ᵐ, avec a non nul.</p><p>Puissance de puissance : (aⁿ)ᵐ = aⁿˣᵐ.</p><p>a⁰ = 1 si a est non nul ; a¹ = a.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Simplifie 2³ × 2⁴.</p><ol class="etapes"><li>Je remarque que les bases sont identiques.</li><li>J’utilise le produit : 2³ × 2⁴ = 2³⁺⁴.</li><li>Réponse : 2⁷ = 128.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Simplifie 3² × 3⁵ ÷ 3⁴, puis calcule le résultat.</p><ol class="etapes"><li>Le produit donne 3⁷.</li><li>Le quotient donne 3⁷⁻⁴ = 3³.</li><li>3³ = 27.</li><li>Réponse : 27.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>2³ × 2⁴ ne donne pas 4⁷ : on ne multiplie pas les bases.</p><p>(3²)⁴ donne 3⁸, pas 3⁶ : on multiplie les exposants.</p><p>Dans un quotient, on soustrait les exposants, mais seulement lorsque les bases sont identiques.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Décoder</div><p>Une expression contient cinq facteurs 7, puis est divisée par 7⁴. Écris le résultat sous forme d’une seule puissance et calcule-le.</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Cinq facteurs 7 donnent 7⁵. Puis 7⁵ ÷ 7⁴ = 7¹ = 7.</p></div></details></div>
+    `
+  },
+  {
+    title: "Racines carrées : l’inverse du carré",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : racine carrée d’un nombre positif, carrés parfaits et encadrement.</p>
+      <div class="formule"><div class="f-nom">Définition</div><div class="f-eq">√(a²) = a, pour a ≥ 0</div><div class="f-aide">La racine carrée cherche le nombre positif qui, multiplié par lui-même, donne le nombre de départ.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Une aire de carré dont on cherche le côté, un résultat au carré dans Pythagore, un nombre situé entre deux carrés parfaits, une expression avec le symbole √.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Calculer la racine d’un carré parfait.</p><p>• Simplifier une racine connue.</p><p>• Encadrer une racine entre deux entiers.</p><p>• Retrouver une longueur à partir d’une aire.</p><p>• Utiliser la racine à la fin d’un calcul de Pythagore.</p><p>• Repérer une fausse distribution de la racine sur une somme.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Carrés parfaits à connaître</div><p>1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400.</p><p>Si 49 < 50 < 64, alors 7 < √50 < 8.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Une salle carrée a une aire de 144 m². Quel est son côté ?</p><ol class="etapes"><li>Pour un carré, aire = côté × côté.</li><li>Je cherche le nombre dont le carré vaut 144.</li><li>√144 = 12, car 12 × 12 = 144.</li><li>Réponse : 12 m.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Calcule √(9 + 16), puis encadre √50 entre deux entiers.</p><ol class="etapes"><li>La racine couvre toute la somme : 9 + 16 = 25.</li><li>√25 = 5.</li><li>Pour 50, les carrés voisins sont 49 et 64.</li><li>Donc 7 < √50 < 8.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>√(9 + 16) n’est pas √9 + √16. La bonne réponse est 5, pas 7.</p><p>Ne confonds pas √144 = 12 et √144 = 144.</p><p>La racine carrée réelle d’un nombre négatif n’est pas étudiée ici.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Décoder</div><p>Un terrain carré occupe 225 m². On veut poser une clôture tout autour. Quelle longueur de clôture faut-il, sans tenir compte d’une porte ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Côté = √225 = 15 m. Périmètre = 4 × 15 = 60 m. Il faut 60 m de clôture.</p></div></details></div>
+    `
+  },
+  {
+    title: "Équations du premier degré",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : résoudre une équation du premier degré à une inconnue.</p>
+      <div class="formule"><div class="f-nom">Forme simple</div><div class="f-eq">ax + b = c ⟹ x = (c − b) ÷ a</div><div class="f-aide">Le but est d’isoler l’inconnue en effectuant la même opération des deux côtés.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Un nombre inconnu, un prix inconnu, une somme, un âge, « le double », « le triple », « augmenté de », « diminué de », « vaut au total ».</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Résoudre une équation déjà écrite.</p><p>• Développer une parenthèse avant de résoudre.</p><p>• Résoudre une équation avec x des deux côtés.</p><p>• Traduire un problème en équation.</p><p>• Retrouver un nombre à partir d’une suite d’opérations.</p><p>• Vérifier si une valeur proposée est solution.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>3 cahiers et 5 FC de plus coûtent 20 FC. Combien coûte un cahier ?</p><ol class="etapes"><li>Je pose x = prix d’un cahier.</li><li>3x + 5 = 20.</li><li>3x = 20 − 5 = 15.</li><li>x = 15 ÷ 3 = 5.</li><li>Vérification : 3 × 5 + 5 = 20. Un cahier coûte 5 FC.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Résous 4(x − 3) = 2x + 6.</p><ol class="etapes"><li>Je développe : 4x − 12 = 2x + 6.</li><li>Je retire 2x des deux côtés : 2x − 12 = 6.</li><li>J’ajoute 12 : 2x = 18.</li><li>Je divise par 2 : x = 9.</li><li>Vérification : 4(9 − 3) = 24 et 2 × 9 + 6 = 24.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>4(x − 3) = 4x − 12, pas 4x − 3.</p><p>Ne change pas un terme de côté sans changer son signe dans l’écriture simplifiée.</p><p>Ne divise pas par le coefficient avant d’avoir correctement isolé le terme contenant x.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Question transformée</div><p>Je pense à un nombre. Je le multiplie par 5, je retire 7 et j’obtiens 28. Quel est ce nombre ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Soit x le nombre. 5x − 7 = 28. Donc 5x = 35 et x = 7. Vérification : 5 × 7 − 7 = 28.</p></div></details></div>
+    `
+  },
+  {
+    title: "Systèmes de deux équations",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : résoudre un système de deux équations à deux inconnues.</p>
+      <div class="formule"><div class="f-nom">Principe</div><div class="f-eq">ax + by = p<br>cx + dy = q</div><div class="f-aide">Deux inconnues et deux informations indépendantes. Je combine les égalités pour trouver les deux valeurs.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Deux articles différents, deux achats, deux tarifs, deux nombres inconnus, deux informations qui permettent de comparer des totaux.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Résoudre par substitution.</p><p>• Résoudre par combinaison.</p><p>• Choisir la méthode la plus courte.</p><p>• Traduire deux achats en deux équations.</p><p>• Trouver deux nombres à partir de leur somme et de leur différence.</p><p>• Vérifier les deux résultats dans les deux équations.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Deux méthodes</div><p>Substitution : isoler une inconnue, puis la remplacer dans l’autre équation.</p><p>Combinaison : additionner ou soustraire les équations pour éliminer une inconnue.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>2 cahiers et 3 stylos coûtent 1 300 FC. 2 cahiers et 1 stylo coûtent 900 FC. Trouve chaque prix.</p><ol class="etapes"><li>x = prix du cahier ; y = prix du stylo.</li><li>2x + 3y = 1 300 et 2x + y = 900.</li><li>Je soustrais : 2y = 400, donc y = 200.</li><li>2x + 200 = 900, donc x = 350.</li><li>Réponse : cahier 350 FC ; stylo 200 FC.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Résous x + y = 12 et 3x + y = 24.</p><ol class="etapes"><li>J’isole y : y = 12 − x.</li><li>Je remplace : 3x + 12 − x = 24.</li><li>2x = 12, donc x = 6.</li><li>y = 12 − 6 = 6.</li><li>Vérification : 6 + 6 = 12 et 18 + 6 = 24.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Quand je soustrais deux équations, je soustrais les deux membres de chaque égalité.</p><p>Ne confonds pas x et y dans la réponse finale.</p><p>Une solution doit satisfaire les deux équations, pas seulement une.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Indices cachés</div><p>Deux nombres ont une somme de 30. Le premier dépasse le second de 8. Trouve ces nombres.</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>x + y = 30 et x − y = 8. En additionnant : 2x = 38, donc x = 19. Puis y = 11. Les nombres sont 19 et 11.</p></div></details></div>
+    `
+  },
+  {
+    title: "Pythagore I : la formule fondamentale",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : théorème de Pythagore dans un triangle rectangle.</p>
+      <div class="formule"><div class="f-nom">Théorème de Pythagore</div><div class="f-eq">BC² = AB² + AC²</div><div class="f-aide">Dans un triangle rectangle en A, le carré de l’hypoténuse BC est égal à la somme des carrés des deux autres côtés.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Triangle rectangle, angle droit, côté opposé à l’angle droit, équerre, diagonale, échelle, mur perpendiculaire au sol.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Trouver l’hypoténuse avec les deux autres côtés.</p><p>• Trouver un côté de l’angle droit avec l’hypoténuse et l’autre côté.</p><p>• Résoudre un problème de longueur indirecte.</p><p>• Retrouver une dimension manquante dans une figure.</p><p>• Repérer le côté sur lequel porte le carré.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Choisir le bon calcul</div><p>Hypoténuse inconnue : on additionne les carrés.</p><p>Un côté de l’angle droit inconnu : on soustrait les carrés.</p><p>Triplets utiles : 3-4-5 ; 5-12-13 ; 8-15-17 ; 7-24-25 et leurs multiples.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>ABC est rectangle en A, AB = 6 cm et AC = 8 cm. Calcule BC.</p><ol class="etapes"><li>BC est opposé à l’angle droit : c’est l’hypoténuse.</li><li>BC² = 6² + 8² = 36 + 64 = 100.</li><li>BC = √100 = 10 cm.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>ABC est rectangle en A, BC = 13 cm et AB = 5 cm. Calcule AC.</p><ol class="etapes"><li>BC est l’hypoténuse et elle est connue.</li><li>AC² = 13² − 5² = 169 − 25 = 144.</li><li>AC = √144 = 12 cm.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>L’hypoténuse est toujours le plus grand côté. Ne la choisis pas au hasard.</p><p>BC² = 100 ne signifie pas BC = 100 : il faut prendre la racine.</p><p>Si l’hypoténuse est connue, on soustrait pour trouver un autre côté.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Données indirectes</div><p>Une corde relie le sommet d’un poteau au sol. Le point d’attache au sol est à 9 m du pied du poteau. La corde mesure 15 m. À quelle hauteur est-elle attachée ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Le poteau et le sol sont perpendiculaires. La corde est l’hypoténuse. h² = 15² − 9² = 225 − 81 = 144. h = 12 m.</p></div></details></div>
+    `
+  },
+  {
+    title: "Pythagore II : caché dans les figures",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : Pythagore dans le rectangle, le carré, les triangles et le losange.</p>
+      <div class="formule"><div class="f-nom">Diagonale du rectangle</div><div class="f-eq">d² = L² + l²</div><div class="f-aide">La diagonale forme deux triangles rectangles avec la longueur et la largeur.</div></div>
+      <div class="formule"><div class="f-nom">Hauteur d’un triangle isocèle</div><div class="f-eq">h² = c² − (b ÷ 2)²</div><div class="f-aide">La hauteur coupe la base en deux parties égales.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Diagonale d’un rectangle, carré, hauteur d’un triangle isocèle, triangle équilatéral, diagonales d’un losange, trapèze rectangle.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Calculer une diagonale de rectangle ou de carré.</p><p>• Calculer la hauteur d’un triangle isocèle.</p><p>• Retrouver le côté d’un losange avec ses diagonales.</p><p>• Décomposer une figure complexe en triangles rectangles.</p><p>• Trouver une longueur cachée avant de calculer une aire.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Formules utiles</div><p>Carré de côté c : d = c√2.</p><p>Triangle équilatéral de côté c : h = c√3 ÷ 2.</p><p>Losange : c² = (d₁ ÷ 2)² + (d₂ ÷ 2)².</p><p>Trapèze rectangle : tracer ou imaginer la perpendiculaire qui fait apparaître le triangle rectangle.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Un terrain rectangulaire mesure 8 m sur 6 m. Quelle est sa diagonale ?</p><ol class="etapes"><li>La diagonale est l’hypoténuse.</li><li>d² = 8² + 6² = 64 + 36 = 100.</li><li>d = 10 m.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Un triangle isocèle a deux côtés égaux de 5 cm et une base de 6 cm. Calcule sa hauteur.</p><ol class="etapes"><li>La hauteur partage la base en deux : 6 ÷ 2 = 3 cm.</li><li>h² = 5² − 3² = 25 − 9 = 16.</li><li>h = 4 cm.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Dans le triangle isocèle, la hauteur coupe la base en deux. Utiliser toute la base donne un mauvais calcul.</p><p>Ne confonds pas la diagonale avec le périmètre.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Figure transformée</div><p>Un losange a des diagonales de 6 cm et 8 cm. On ne donne pas la longueur de ses côtés. Trouve cette longueur.</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Les demi-diagonales mesurent 3 cm et 4 cm. Elles forment un triangle rectangle avec le côté du losange comme hypoténuse. c² = 3² + 4² = 25. c = 5 cm.</p></div></details></div>
+    `
+  },
+  {
+    title: "Pythagore III : dans la vie et dans l’espace",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : Pythagore dans les situations concrètes et certains solides.</p>
+      <div class="formule"><div class="f-nom">Distance entre deux points</div><div class="f-eq">AB² = (xB − xA)² + (yB − yA)²</div><div class="f-aide">On calcule les écarts horizontal et vertical, puis on applique Pythagore.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Trajet nord puis est, échelle, rampe, poteau et hauban, toit, corde, distance directe entre deux positions, hauteur d’un cône.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Trouver une distance directe après deux déplacements perpendiculaires.</p><p>• Calculer la longueur d’une échelle.</p><p>• Calculer une génératrice de cône.</p><p>• Calculer la distance entre deux points d’un repère.</p><p>• Retrouver une dimension dans un solide ou une construction.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Formules utiles</div><p>Cône : g² = r² + h².</p><p>Diagonale d’un pavé droit : D² = a² + b² + c².</p><p>Pour un cercle avec une corde de longueur c et la distance d du centre à la corde : r² = d² + (c ÷ 2)². La perpendiculaire issue du centre coupe la corde en son milieu.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Une échelle touche un mur à 4 m de hauteur. Son pied est à 3 m du mur. Quelle est sa longueur ?</p><ol class="etapes"><li>Le mur et le sol sont perpendiculaires.</li><li>L’échelle est l’hypoténuse.</li><li>L² = 3² + 4² = 25.</li><li>L = 5 m.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Un camion roule 3 km vers le nord puis 4 km vers l’est. Quelle est sa distance à vol d’oiseau ?</p><ol class="etapes"><li>Les deux directions sont perpendiculaires.</li><li>D² = 3² + 4² = 25.</li><li>D = 5 km.</li><li>La distance directe est de 5 km, même si le trajet parcouru est de 7 km.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>La distance parcourue et la distance à vol d’oiseau ne sont pas la même chose.</p><p>Les deux longueurs utilisées dans Pythagore doivent être exprimées dans la même unité.</p><p>Ne confonds pas le rayon et le diamètre d’un cercle.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Indice caché</div><p>Dans un repère, A(2 ; 1) et B(5 ; 5). Trouve la distance AB. Aucun triangle n’est dessiné.</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Écart horizontal : 5 − 2 = 3. Écart vertical : 5 − 1 = 4. AB² = 3² + 4² = 25. AB = 5 unités.</p></div></details></div>
+    `
+  },
+  {
+    title: "Réciproque de Pythagore : prouver l’angle droit",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : réciproque du théorème de Pythagore.</p>
+      <div class="formule"><div class="f-nom">Réciproque de Pythagore</div><div class="f-eq">BC² = AB² + AC²</div><div class="f-aide">Si BC est le plus grand côté et que cette égalité est vraie, alors le triangle est rectangle en A.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>« Montre que », « prouve que », « ce triangle est-il rectangle ? », « le coin est-il droit ? », contrôle d’un angle dans une construction.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Vérifier si un triangle est rectangle.</p><p>• Contrôler l’équerrage d’une dalle.</p><p>• Comparer trois longueurs pour déterminer la nature d’un triangle.</p><p>• Distinguer le théorème direct de sa réciproque.</p><p>• Justifier une conclusion avec une égalité de carrés.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Méthode obligatoire</div><p>1) Repérer le plus grand côté.</p><p>2) Calculer son carré.</p><p>3) Calculer la somme des carrés des deux autres côtés.</p><p>4) Comparer les deux résultats.</p><p>5) Conclure en écrivant clairement si le triangle est rectangle ou non.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Un triangle a pour côtés 6 cm, 8 cm et 10 cm. Est-il rectangle ?</p><ol class="etapes"><li>Le plus grand côté est 10 cm.</li><li>10² = 100.</li><li>6² + 8² = 36 + 64 = 100.</li><li>Les résultats sont égaux : le triangle est rectangle.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Un maçon mesure 60 cm, 80 cm et 100 cm sur une dalle. Vérifie si le coin est droit. Puis examine un triangle de 5 cm, 6 cm et 8 cm.</p><ol class="etapes"><li>100² = 10 000 et 60² + 80² = 3 600 + 6 400 = 10 000. Le premier triangle est rectangle.</li><li>Pour le second : 8² = 64 et 5² + 6² = 25 + 36 = 61.</li><li>64 ≠ 61 : le second triangle n’est pas rectangle.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Prends toujours le plus grand côté comme hypoténuse supposée.</p><p>Ne compare pas 10 à 6 + 8 : il faut comparer les carrés.</p><p>La réciproque sert à prouver un angle droit, pas à calculer une longueur manquante.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Question inversée</div><p>Un fabricant annonce qu’un cadre triangulaire de côtés 7 cm, 24 cm et 25 cm possède un angle droit. Peut-on le vérifier sans mesurer les angles ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>25² = 625. 7² + 24² = 49 + 576 = 625. L’égalité est vraie : le triangle est rectangle.</p></div></details></div>
+    `
+  },
+  {
+    title: "Transformations : symétries et projection",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : symétrie axiale, symétrie centrale et projection sur une droite.</p>
+      <div class="formule"><div class="f-nom">Symétrie centrale de centre O</div><div class="f-eq">(x ; y) devient (−x ; −y)</div><div class="f-aide">Pour une symétrie de centre O(0 ; 0), les deux coordonnées changent de signe.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Image d’un point, symétrique par rapport à une droite, demi-tour autour d’un point, pliage le long d’un axe, projection perpendiculaire.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Construire l’image d’un point sur un quadrillage.</p><p>• Trouver les coordonnées d’un symétrique.</p><p>• Reconnaître le centre ou l’axe de symétrie.</p><p>• Déterminer une image par symétrie axiale ou centrale.</p><p>• Repérer une projection perpendiculaire.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>Symétrie par rapport à l’axe des abscisses : (x ; y) devient (x ; −y).</p><p>Symétrie par rapport à l’axe des ordonnées : (x ; y) devient (−x ; y).</p><p>Symétrie centrale de centre O : (x ; y) devient (−x ; −y).</p><p>Sur un quadrillage, compte les carreaux plutôt que de placer le point à l’œil.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>A(3 ; −2) est transformé par symétrie par rapport à l’axe des abscisses. Quelles sont ses coordonnées ?</p><ol class="etapes"><li>L’axe des abscisses est horizontal.</li><li>L’abscisse ne change pas ; l’ordonnée change de signe.</li><li>Réponse : A’(3 ; 2).</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>B(−4 ; 5) est transformé par symétrie centrale de centre O(0 ; 0). Où se trouve son image ?</p><ol class="etapes"><li>Les deux coordonnées changent de signe.</li><li>B’(4 ; −5).</li><li>Le milieu de BB’ est bien O(0 ; 0).</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Sur l’axe des abscisses, seule l’ordonnée change.</p><p>Sur l’axe des ordonnées, seule l’abscisse change.</p><p>Pour une symétrie centrale de centre O, les deux coordonnées changent.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Décoder</div><p>Un point se trouve 4 carreaux à gauche de l’origine et 3 carreaux au-dessus. On effectue un demi-tour autour de l’origine. Où se trouve son image ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Le point est (−4 ; 3). Après un demi-tour autour de l’origine, il devient (4 ; −3).</p></div></details></div>
+    `
+  },
+  {
+    title: "Aires et volumes",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : aires des figures usuelles et volumes des solides.</p>
+      <div class="formule"><div class="f-nom">Aires usuelles</div><div class="f-eq">Carré : A = c × c<br>Rectangle : A = L × l<br>Triangle : A = (b × h) ÷ 2<br>Disque : A = π × r²</div><div class="f-aide">L’aire mesure une surface : son unité est au carré.</div></div>
+      <div class="formule"><div class="f-nom">Volumes usuels</div><div class="f-eq">Cube : V = c³<br>Pavé : V = L × l × h<br>Cylindre : V = π × r² × h</div><div class="f-aide">Le volume mesure l’espace occupé : son unité est au cube.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Peindre, carreler, couvrir, tapisser : surface. Remplir, contenir, creuser, transporter de l’eau : volume. Entourer, clôturer, border : périmètre.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Calculer une aire à partir des dimensions.</p><p>• Retrouver une dimension à partir d’une aire.</p><p>• Calculer un volume de cube, pavé ou cylindre.</p><p>• Calculer une quantité de peinture ou de carreaux.</p><p>• Déterminer combien de récipients remplissent un réservoir.</p><p>• Combiner une aire avec un prix ou un pourcentage.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Une salle rectangulaire mesure 8 m sur 5 m. On veut carreler le sol. Quelle aire faut-il couvrir ?</p><ol class="etapes"><li>Carreler le sol signifie couvrir une surface.</li><li>A = L × l = 8 × 5.</li><li>Réponse : 40 m².</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Un réservoir cylindrique a un rayon de 1 m et une hauteur de 2 m. Quelle capacité approximative possède-t-il en litres ?</p><ol class="etapes"><li>On cherche une capacité : je calcule le volume du cylindre.</li><li>V = 3,14 × 1² × 2 = 6,28 m³.</li><li>1 m³ = 1 000 L, donc 6,28 m³ = 6 280 L.</li><li>Réponse : environ 6 280 litres.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Aire : m². Volume : m³. Longueur : m.</p><p>Dans l’aire du triangle, on divise par 2.</p><p>Le diamètre vaut deux fois le rayon : ne remplace pas r par le diamètre.</p><p>Le périmètre sert à entourer ; l’aire sert à couvrir.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Question détournée</div><p>Un mur rectangulaire mesure 4 m de large et 3 m de haut. Un pot couvre 5 m². Combien de pots faut-il pour peindre le mur en une couche ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Aire = 4 × 3 = 12 m². Nombre de pots = 12 ÷ 5 = 2,4. Il faut arrondir au nombre entier supérieur : 3 pots.</p></div></details></div>
+    `
+  },
+  {
+    title: "Conversions de mesures",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : conversions de longueur, aire, volume, capacité et masse.</p>
+      <div class="formule"><div class="f-nom">Volume et capacité</div><div class="f-eq">1 L = 1 dm³ = 1 000 cm³</div><div class="f-aide">Un litre correspond au volume d’un cube de 10 cm de côté.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>Le texte donne des mesures dans des unités différentes, demande une réponse en litres, en mètres carrés, en grammes ou dans une unité précise.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Convertir une longueur.</p><p>• Convertir une aire.</p><p>• Convertir un volume.</p><p>• Passer des litres aux décimètres cubes.</p><p>• Convertir une masse.</p><p>• Convertir avant d’appliquer une formule.</p><p>• Comparer des quantités exprimées dans des unités différentes.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>Longueur : chaque marche vaut 10. 1 m = 10 dm = 100 cm.</p><p>Aire : chaque marche vaut 100. 1 m² = 100 dm² = 10 000 cm².</p><p>Volume : chaque marche vaut 1 000. 1 m³ = 1 000 dm³.</p><p>Masse : 1 kg = 1 000 g.</p><p>Capacité : 1 L = 100 cL ; 1 m³ = 1 000 L.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Convertis 2,5 m² en dm².</p><ol class="etapes"><li>Il s’agit d’une aire : une marche vaut 100.</li><li>2,5 × 100 = 250.</li><li>Réponse : 250 dm².</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Un réservoir contient 3 dm³ d’eau. Combien de bouteilles de 50 cL peut-on remplir ?</p><ol class="etapes"><li>3 dm³ = 3 L.</li><li>50 cL = 0,5 L.</li><li>3 ÷ 0,5 = 6.</li><li>Réponse : 6 bouteilles.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Pour les aires, une marche vaut 100, pas 10.</p><p>Pour les volumes, une marche vaut 1 000.</p><p>1 L = 1 dm³, et non 1 cm³.</p><p>Avant une multiplication ou une addition de mesures, vérifie qu’elles sont dans la même unité.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Deux conversions</div><p>Un réservoir contient 4 500 cm³ d’eau. On remplit des verres de 25 cL. Combien de verres complets peut-on remplir ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>4 500 cm³ = 4,5 L. 25 cL = 0,25 L. 4,5 ÷ 0,25 = 18. On remplit 18 verres.</p></div></details></div>
+    `
+  },
+  {
+    title: "Statistique descriptive",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : moyenne, mode, médiane, fréquence et lecture d’un tableau.</p>
+      <div class="formule"><div class="f-nom">Moyenne et fréquence</div><div class="f-eq">Moyenne = somme ÷ effectif<br>Fréquence = (effectif ÷ total) × 100</div><div class="f-aide">La moyenne partage le total ; la fréquence exprime une proportion en pourcentage.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>« En moyenne », « le plus fréquent », « valeur du milieu », « pourcentage d’élèves », « répartition », « effectif total ».</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Calculer une moyenne simple.</p><p>• Trouver le mode.</p><p>• Trouver la médiane d’une série ordonnée.</p><p>• Calculer une fréquence en pourcentage.</p><p>• Lire un tableau d’effectifs.</p><p>• Retrouver une donnée manquante à partir d’une moyenne.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>Mode : valeur qui apparaît le plus souvent.</p><p>Médiane : valeur du milieu après classement croissant. Si l’effectif est pair, on fait la moyenne des deux valeurs centrales.</p><p>La moyenne n’est pas obligatoirement une valeur de la série.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>Notes : 8, 12, 12, 15, 18. Calcule la moyenne.</p><ol class="etapes"><li>Somme = 8 + 12 + 12 + 15 + 18 = 65.</li><li>Effectif = 5.</li><li>Moyenne = 65 ÷ 5 = 13.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Pour la même série, trouve le mode, la médiane et la fréquence de 12.</p><ol class="etapes"><li>Le mode est 12 : il apparaît deux fois.</li><li>La médiane est la troisième valeur : 12.</li><li>Fréquence de 12 = (2 ÷ 5) × 100 = 40 %.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Range les valeurs avant de chercher la médiane.</p><p>Pour la fréquence, divise par l’effectif total, pas par le nombre de valeurs différentes.</p><p>Ne confonds pas effectif et fréquence.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Donnée manquante</div><p>Quatre élèves ont une moyenne de 12. Trois notes sont 10, 12 et 14. Quelle est la quatrième note ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Somme totale = 4 × 12 = 48. Somme des trois notes = 36. Note manquante = 48 − 36 = 12.</p></div></details></div>
+    `
+  },
+  {
+    title: "Repérage dans le plan",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : coordonnées d’un point, milieu d’un segment et distance. [Le milieu est à confirmer selon le programme officiel retenu.]</p>
+      <div class="formule"><div class="f-nom">Milieu d’un segment</div><div class="f-eq">M = ((xA + xB) ÷ 2 ; (yA + yB) ÷ 2)</div><div class="f-aide">Je calcule la moyenne des abscisses et la moyenne des ordonnées.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>« Place le point », « coordonnées », « abscisse », « ordonnée », « milieu », « distance entre deux points ».</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Lire les coordonnées sur un quadrillage.</p><p>• Placer un point à partir de ses coordonnées.</p><p>• Trouver le milieu d’un segment.</p><p>• Calculer la distance entre deux points.</p><p>• Retrouver une coordonnée manquante.</p><p>• Combiner repérage, symétrie et Pythagore.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>L’abscisse se lit d’abord, horizontalement. L’ordonnée se lit ensuite, verticalement.</p><p>Pour la distance, on peut utiliser Pythagore : AB² = (xB − xA)² + (yB − yA)².</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>A(2 ; 1) et B(5 ; 5). Trouve le milieu M et la distance AB.</p><ol class="etapes"><li>Abscisse du milieu : (2 + 5) ÷ 2 = 3,5.</li><li>Ordonnée du milieu : (1 + 5) ÷ 2 = 3.</li><li>M(3,5 ; 3).</li><li>AB² = 3² + 4² = 25, donc AB = 5 unités.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>A(−2 ; 3) et B(4 ; −5). Calcule AB.</p><ol class="etapes"><li>Écart horizontal : 4 − (−2) = 6.</li><li>Écart vertical : −5 − 3 = −8.</li><li>AB² = 6² + (−8)² = 36 + 64 = 100.</li><li>AB = 10 unités.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Une distance est toujours positive ou nulle.</p><p>Ne confonds pas abscisse et ordonnée.</p><p>Dans le calcul de distance, les différences sont mises au carré : leur signe négatif ne rend pas la distance négative.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Question inversée</div><p>Le milieu d’un segment est M(4 ; 3). Une extrémité est A(1 ; 2). Trouve l’autre extrémité B.</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>4 = (1 + xB) ÷ 2, donc xB = 7. 3 = (2 + yB) ÷ 2, donc yB = 4. B(7 ; 4).</p></div></details></div>
+    `
+  },
+  {
+    title: "Proportionnalité et pourcentages",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : proportionnalité, règle de trois, produit en croix, remise et augmentation.</p>
+      <div class="formule"><div class="f-nom">Produit en croix</div><div class="f-eq">a ÷ b = c ÷ x ⟹ x = (b × c) ÷ a</div><div class="f-aide">Je vérifie d’abord que les deux grandeurs sont proportionnelles.</div></div>
+      <div class="bloc signal"><div class="bloc-label">Indices à reconnaître</div><p>« Si 3 coûtent, combien pour 5 ? », prix par quantité, distance et durée à vitesse constante, remise, augmentation, taux en pourcentage.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">Toutes les formes d’exercice</div><p>• Résoudre une règle de trois directe.</p><p>• Trouver un prix unitaire.</p><p>• Calculer une remise.</p><p>• Calculer une augmentation.</p><p>• Retrouver le prix initial après une réduction.</p><p>• Comparer deux offres proportionnelles.</p><p>• Vérifier si une situation est réellement proportionnelle.</p></div>
+      <div class="bloc theorie"><div class="bloc-label">À retenir</div><p>Remise : montant = prix × taux ÷ 100 ; prix payé = prix initial − remise.</p><p>Augmentation : montant = prix × taux ÷ 100 ; nouveau prix = prix initial + augmentation.</p><p>Un pourcentage est une proportion sur 100.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">NIVEAU 1</span><div class="bloc-label">Exemple corrigé</div><p>3 pains coûtent 600 FC. Combien coûtent 5 pains ?</p><ol class="etapes"><li>Le prix est proportionnel à la quantité.</li><li>x = (5 × 600) ÷ 3 = 1 000 FC.</li><li>Vérification : un pain coûte 200 FC ; 5 pains coûtent 1 000 FC.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-difficile">NIVEAU 4</span><div class="bloc-label">Exemple corrigé</div><p>Un vélo coûte 25 000 FC. Le vendeur accorde une remise de 20 %. Quel est le prix payé ?</p><ol class="etapes"><li>Remise = 25 000 × 20 ÷ 100 = 5 000 FC.</li><li>Prix payé = 25 000 − 5 000 = 20 000 FC.</li><li>Autre méthode : 80 % du prix = 25 000 × 0,8 = 20 000 FC.</li></ol></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges</div><p>Une remise de 20 % n’est pas le prix payé : il faut soustraire la remise.</p><p>Une situation n’est pas automatiquement proportionnelle parce qu’elle contient deux nombres.</p><p>Vérifie que tu calcules le bon montant : remise, prix initial ou prix final.</p></div>
+      <div class="bloc defi"><div class="bloc-label">NIVEAU 3 — Retrouver le prix initial</div><p>Après une remise de 20 %, un article coûte 16 000 FC. Quel était son prix avant la remise ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Après une remise de 20 %, le prix payé représente 80 % du prix initial. Prix initial = 16 000 ÷ 0,8 = 20 000 FC.</p></div></details></div>
+    `
+  },
+  {
+    title: "Exercices combinés : le sommet du guide",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : plusieurs outils enchaînés dans un même problème.</p>
+      <div class="bloc signal"><div class="bloc-label">La méthode des problèmes combinés</div><p>Ne cherche pas une formule unique. Identifie le résultat intermédiaire nécessaire, calcule-le, puis utilise-le pour l’étape suivante.</p><p>Une donnée peut être vraie mais inutile. Une information importante peut être cachée dans une phrase ordinaire.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-combine">NIVEAU 4 — COMBINÉ A</span><div class="bloc-label">Terrain et clôture</div><p>Un terrain rectangulaire mesure 40 m sur 30 m. On veut poser une clôture à 2 500 FC le mètre. Le vendeur accorde 10 % de remise. Une diagonale mesure 50 m. Quel est le coût final de la clôture ?</p><ol class="etapes"><li>On entoure le terrain : il faut le périmètre, pas l’aire ni la diagonale.</li><li>P = 2 × (40 + 30) = 140 m.</li><li>Coût initial = 140 × 2 500 = 350 000 FC.</li><li>Remise = 350 000 × 10 ÷ 100 = 35 000 FC.</li><li>Coût final = 315 000 FC. La diagonale était inutile.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-combine">NIVEAU 4 — COMBINÉ B</span><div class="bloc-label">Toit triangulaire</div><p>Un toit isocèle a une base de 8 m et deux côtés de 5 m. Un pot de peinture couvre 5 m². Combien de pots faut-il pour peindre une face triangulaire ?</p><ol class="etapes"><li>La hauteur coupe la base en deux : 4 m.</li><li>h² = 5² − 4² = 9, donc h = 3 m.</li><li>Aire = (8 × 3) ÷ 2 = 12 m².</li><li>12 ÷ 5 = 2,4. Il faut arrondir au-dessus.</li><li>Réponse : 3 pots.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-combine">NIVEAU 4 — COMBINÉ C</span><div class="bloc-label">Réservoir cylindrique</div><p>Un réservoir cylindrique a un rayon de 1 m et une hauteur de 2 m. On le remplit avec des seaux de 20 L. Combien de seaux complets faut-il pour le remplir ?</p><ol class="etapes"><li>V = π × r² × h = 3,14 × 1² × 2 = 6,28 m³.</li><li>6,28 m³ = 6 280 L.</li><li>6 280 ÷ 20 = 314.</li><li>Réponse : 314 seaux.</li></ol></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-combine">NIVEAU 4 — COMBINÉ D</span><div class="bloc-label">Trajet et durée</div><p>Un cycliste va 3 km vers le nord puis 4 km vers l’est. Il revient directement à son point de départ à 2,5 km/h. Combien de temps dure le retour ?</p><ol class="etapes"><li>Les deux directions sont perpendiculaires : D² = 3² + 4² = 25.</li><li>La distance directe vaut 5 km.</li><li>Temps = distance ÷ vitesse = 5 ÷ 2,5 = 2 h.</li><li>Réponse : 2 heures.</li></ol></div>
+      <div class="bloc astuce"><div class="bloc-label">NIVEAU 5 — Réflexe d’examen</div><p>Pour chaque problème, écris les étapes dans l’ordre. Ne calcule pas toutes les données simplement parce qu’elles sont présentes. Calcule uniquement ce qui permet de répondre à la question.</p></div>
+    `
+  },
+  {
+    title: "Le défi du maître : le réservoir de secours",
+    content: `
+      <p class="vu-en">📍 Épreuve de transfert : plusieurs chapitres, indices indirects et données inutiles.</p>
+      <div class="bloc signal"><div class="bloc-label">Mission</div><p>Après une longue coupure d’eau, une école doit remplir son réservoir cylindrique pour alimenter ses classes. Le réservoir a un diamètre intérieur de 2 m et une hauteur de 3 m. Le camion-citerne transporte 1 500 litres par voyage. Le fournisseur annonce une réduction de 10 % sur le prix de l’eau, fixé à 2 000 FC par 1 000 litres.</p><p>Le responsable affirme que deux voyages suffiront. Il demande à l’équipe de vérifier sa déclaration et de calculer le coût après réduction.</p></div>
+      <div class="bloc astuce"><div class="bloc-label">Avant de calculer</div><p>Attention aux indices : le diamètre n’est pas le rayon. Le volume est en m³, mais le camion est exprimé en litres. La remise ne doit être calculée qu’après avoir trouvé le coût initial.</p><p>La couleur du camion, le nombre de classes et la date de livraison ne servent pas aux calculs.</p></div>
+      <div class="bloc defi"><div class="bloc-label">À toi de jouer — Niveau 5</div><p>1) Quel est le rayon du réservoir ?</p><p>2) Quel est son volume en m³ ? Utilise π ≈ 3,14.</p><p>3) Quelle est sa capacité en litres ?</p><p>4) Combien de voyages de 1 500 L faut-il au minimum ?</p><p>5) Quel est le coût de l’eau avant réduction ?</p><p>6) Quel est le coût après réduction de 10 % ?</p><p>7) Pourquoi l’affirmation du responsable est-elle fausse ou vraie ? Justifie.</p><details class="reponse"><summary>Voir la correction détaillée</summary><div class="corrige"><p><b>1) Rayon :</b> le diamètre est 2 m. Le rayon vaut 2 ÷ 2 = 1 m.</p><p><b>2) Volume :</b> V = π × r² × h = 3,14 × 1² × 3 = 9,42 m³.</p><p><b>3) Capacité :</b> 9,42 × 1 000 = 9 420 L.</p><p><b>4) Voyages :</b> 9 420 ÷ 1 500 = 6,28. Il faut 7 voyages complets ou partiels pour transporter toute l’eau.</p><p><b>5) Coût initial :</b> 9 420 L correspondent à 9,42 groupes de 1 000 L. Coût = 9,42 × 2 000 = 18 840 FC.</p><p><b>6) Réduction :</b> 18 840 × 10 ÷ 100 = 1 884 FC. Coût final = 18 840 − 1 884 = 16 956 FC.</p><p><b>7) Conclusion :</b> deux voyages apportent seulement 3 000 L. Il en faut 9 420 L. L’affirmation est donc fausse.</p></div></details></div>
+      <div class="bloc cas"><div class="bloc-label">Pourquoi ce problème est difficile</div><p>Il faut reconnaître un cylindre sans que la formule soit annoncée, transformer le diamètre en rayon, calculer un volume, convertir en litres, diviser et arrondir au-dessus, puis calculer une remise.</p><p>La difficulté n’est pas une formule compliquée : c’est l’ordre des décisions.</p></div>
+    `
+  },
+  {
+    title: "Rédiger et vérifier sa copie",
+    content: `
+      <p class="vu-en">📍 Vu en leçon : méthode de rédaction et de vérification d’un exercice de mathématiques.</p>
+      <div class="bloc theorie"><div class="bloc-label">Les cinq temps d’une bonne copie</div><p>1) Données : écrire les informations utiles avec leurs unités.</p><p>2) Recherche : dire ce qu’on cherche.</p><p>3) Formule : écrire l’outil choisi avant de remplacer les lettres.</p><p>4) Calcul : montrer les étapes et les conversions.</p><p>5) Conclusion : donner la réponse avec l’unité et une phrase.</p></div>
+      <div class="bloc signal"><div class="bloc-label">Comment gagner des points</div><p>Le correcteur doit pouvoir suivre ton raisonnement. Même si une erreur apparaît dans un calcul, les étapes correctes peuvent montrer que tu as choisi la bonne méthode.</p><p>Ne donne jamais un résultat sans expliquer d’où il vient.</p></div>
+      <div class="bloc exemple"><span class="niveau-tag niv-facile">EXEMPLE</span><div class="bloc-label">Copie modèle</div><p>Une cour rectangulaire mesure 12 m sur 7 m. Quelle est son aire ?</p><ol class="etapes"><li>Données : L = 12 m ; l = 7 m.</li><li>Recherche : aire de la cour.</li><li>Formule : A = L × l.</li><li>Calcul : A = 12 × 7 = 84.</li><li>Conclusion : l’aire de la cour est de 84 m².</li></ol></div>
+      <div class="bloc astuce"><div class="bloc-label">Vérification intelligente</div><p>Une aire de 84 m² pour une cour de 12 m sur 7 m est plausible. Une réponse de 84 m serait une erreur d’unité.</p><p>Vérifie aussi les ordres de grandeur, les signes, les conversions et les arrondis.</p></div>
+      <div class="bloc cas"><div class="bloc-label">Pièges de présentation</div><p>Ne laisse pas un résultat sans unité. N’efface pas toutes les étapes. Ne confonds pas une valeur intermédiaire avec la réponse finale.</p></div>
+      <div class="bloc defi"><div class="bloc-label">À toi de jouer</div><p>Rédige en cinq temps : un triangle a une base de 10 cm et une hauteur de 6 cm. Quelle est son aire ?</p><details class="reponse"><summary>Voir la correction</summary><div class="corrige"><p>Données : b = 10 cm ; h = 6 cm. Recherche : aire. Formule : A = (b × h) ÷ 2. Calcul : A = (10 × 6) ÷ 2 = 30. Conclusion : l’aire du triangle est de 30 cm².</p></div></details></div>
+    `
+  },
+  {
+    title: "Quiz final",
+    content: `
+      <div class="quiz-container">
+        <div id="quizQuestions"></div>
+        <button id="submitQuiz" class="quiz-btn-submit">Valider mes réponses</button>
+        <div id="quizResult" class="quiz-result"></div>
       </div>
-
-      <h3>Résolution sans raccourci</h3>
-      <p><strong>Étape 1 — Dépense totale :</strong></p>
-      <p>12 × 500 = 6 000 FC.</p>
-      <p><strong>Étape 2 — Recette totale :</strong></p>
-      <p>12 × 650 = 7 800 FC.</p>
-      <p><strong>Étape 3 — Bénéfice :</strong></p>
-      <p>7 800 − 6 000 = 1 800 FC.</p>
-      <div class="bloc reponse"><strong>Réponse :</strong> le bénéfice total est de 1 800 FC.</div>
-
-      <h3>Une habitude à prendre</h3>
-      <p>Ne commence pas à calculer dès que tu vois des nombres. Lis d'abord la question finale. Deux exercices peuvent contenir presque les mêmes données, mais demander des résultats différents.</p>
-    `
-  },
-  {
-    title: "Quand intervient-il ? Nombres, opérations et fractions",
-    content: `
-      <h3>Les formes d'exercices à reconnaître</h3>
-      <p>Ces méthodes interviennent notamment lorsqu'un exercice demande :</p>
-      <ul>
-        <li>De calculer une somme, une différence, un produit ou un quotient.</li>
-        <li>De comparer des nombres décimaux ou des fractions.</li>
-        <li>De simplifier une fraction ou de mettre deux fractions au même dénominateur.</li>
-        <li>De calculer une fraction d'une quantité.</li>
-        <li>De retrouver une quantité à partir d'une fraction connue.</li>
-        <li>De résoudre un problème comportant plusieurs opérations.</li>
-      </ul>
-
-      <h3>Les indices à reconnaître</h3>
-      <table>
-        <tr><th>Dans l'énoncé</th><th>Ce qu'il faut envisager</th></tr>
-        <tr><td>« La moitié », « le tiers », « les trois quarts »</td><td>Une fraction d'une quantité</td></tr>
-        <tr><td>« Au total », « ensemble »</td><td>Une addition, parfois précédée d'autres calculs</td></tr>
-        <tr><td>« Reste », « différence »</td><td>Une soustraction</td></tr>
-        <tr><td>« Chaque », « par personne », « à l'unité »</td><td>Une multiplication ou une division selon la question</td></tr>
-        <tr><td>« Simplifier », « réduire »</td><td>Une fraction équivalente plus simple</td></tr>
-        <tr><td>« Lequel est le plus grand ? »</td><td>Une comparaison</td></tr>
-      </table>
-
-      <h3>Exemple d'examen : calculer une fraction d'une quantité</h3>
-      <p>Une école possède 240 élèves. Les trois huitièmes participent à une activité sportive. Combien d'élèves y participent ?</p>
-      <p><strong>Données :</strong> total = 240 ; fraction = 3/8.</p>
-      <p><strong>Étape 1 :</strong> calculer un huitième : 240 ÷ 8 = 30.</p>
-      <p><strong>Étape 2 :</strong> prendre trois huitièmes : 30 × 3 = 90.</p>
-      <div class="bloc reponse">90 élèves participent à l'activité.</div>
-
-      <h3>Exemple inverse</h3>
-      <p>Les trois cinquièmes d'une somme représentent 45 000 FC. Quelle est la somme entière ?</p>
-      <p><strong>Étape 1 :</strong> un cinquième vaut 45 000 ÷ 3 = 15 000 FC.</p>
-      <p><strong>Étape 2 :</strong> cinq cinquièmes valent 15 000 × 5 = 75 000 FC.</p>
-      <div class="bloc reponse">La somme entière est de 75 000 FC.</div>
-      <p><strong>Piège :</strong> ne multiplie pas directement 45 000 par 3/5. Les 45 000 FC représentent déjà les trois cinquièmes.</p>
-    `
-  },
-  {
-    title: "Quand intervient-il ? Proportionnalité et pourcentages",
-    content: `
-      <h3>Les formes d'exercices concernés</h3>
-      <ul>
-        <li>Calculer le prix de plusieurs objets à partir du prix d'un seul.</li>
-        <li>Compléter un tableau de proportionnalité.</li>
-        <li>Calculer une quantité à partir d'une échelle ou d'un rapport.</li>
-        <li>Calculer un pourcentage d'une quantité.</li>
-        <li>Retrouver le prix initial après une réduction ou une augmentation.</li>
-        <li>Comparer deux offres ou deux proportions.</li>
-      </ul>
-
-      <h3>Les indices à reconnaître</h3>
-      <table>
-        <tr><th>Indice</th><th>Méthode à envisager</th></tr>
-        <tr><td>« Même prix unitaire »</td><td>Proportionnalité</td></tr>
-        <tr><td>« Pour 1, pour 2, pour 5 »</td><td>Passage à l'unité ou tableau</td></tr>
-        <tr><td>« X % de »</td><td>Multiplier par X/100</td></tr>
-        <tr><td>« Réduction de X % »</td><td>Calculer la réduction puis la soustraire</td></tr>
-        <tr><td>« Augmentation de X % »</td><td>Calculer l'augmentation puis l'ajouter</td></tr>
-      </table>
-
-      <h3>Exemple : tableau de proportionnalité</h3>
-      <p>4 mètres de tissu coûtent 18 000 FC. Combien coûtent 7 mètres au même tarif ?</p>
-      <table>
-        <tr><th>Longueur</th><td>4 m</td><td>1 m</td><td>7 m</td></tr>
-        <tr><th>Prix</th><td>18 000 FC</td><td>?</td><td>?</td></tr>
-      </table>
-      <p><strong>Étape 1 :</strong> prix d'un mètre = 18 000 ÷ 4 = 4 500 FC.</p>
-      <p><strong>Étape 2 :</strong> prix de 7 mètres = 4 500 × 7 = 31 500 FC.</p>
-      <div class="bloc reponse">7 mètres coûtent 31 500 FC.</div>
-
-      <h3>Exemple : réduction</h3>
-      <p>Un article coûte 80 000 FC. Le vendeur accorde une réduction de 15 %. Quel est le nouveau prix ?</p>
-      <p><strong>Étape 1 :</strong> réduction = 80 000 × 15 ÷ 100 = 12 000 FC.</p>
-      <p><strong>Étape 2 :</strong> nouveau prix = 80 000 − 12 000 = 68 000 FC.</p>
-      <div class="bloc reponse">Le nouveau prix est de 68 000 FC.</div>
-      <p><strong>Piège :</strong> 15 % est la réduction, pas le prix final. Il faut encore effectuer la soustraction.</p>
-    `
-  },
-  {
-    title: "Quand intervient-il ? Équations et systèmes",
-    content: `
-      <h3>Les formes d'exercices concernés</h3>
-      <ul>
-        <li>Retrouver un nombre inconnu dans une égalité.</li>
-        <li>Traduire une phrase en équation.</li>
-        <li>Déterminer deux nombres à partir de leur somme et de leur différence.</li>
-        <li>Déterminer deux quantités à partir de deux informations liées.</li>
-        <li>Résoudre un système de deux équations lorsque l'exercice le demande.</li>
-      </ul>
-
-      <h3>Les termes et données à reconnaître</h3>
-      <p><strong>Inconnue :</strong> le nombre que l'on cherche. On le représente souvent par x ou y.</p>
-      <p><strong>Équation :</strong> une égalité contenant une ou plusieurs inconnues.</p>
-      <p><strong>Système :</strong> deux équations ou davantage qui doivent être vérifiées par les mêmes inconnues.</p>
-      <p><strong>Solution :</strong> la valeur ou les valeurs qui rendent les égalités vraies.</p>
-
-      <h3>Résoudre une équation : exemple</h3>
-      <p>On cherche un nombre. En lui ajoutant 7, on obtient 25. Quel est ce nombre ?</p>
-      <p><strong>Étape 1 :</strong> appeler x le nombre recherché.</p>
-      <p><strong>Étape 2 :</strong> traduire l'énoncé : x + 7 = 25.</p>
-      <p><strong>Étape 3 :</strong> isoler x : x = 25 − 7.</p>
-      <p><strong>Étape 4 :</strong> calculer : x = 18.</p>
-      <p><strong>Vérification :</strong> 18 + 7 = 25.</p>
-      <div class="bloc reponse">Le nombre recherché est 18.</div>
-
-      <h3>Résoudre un système : exemple guidé</h3>
-      <p>Deux nombres ont une somme de 30. Le premier dépasse le second de 6. Trouve ces deux nombres.</p>
-      <p><strong>Étape 1 — Définir les inconnues :</strong> x représente le premier nombre ; y représente le second.</p>
-      <p><strong>Étape 2 — Traduire les deux informations :</strong></p>
-      <ul>
-        <li>Leur somme vaut 30 : x + y = 30.</li>
-        <li>Le premier dépasse le second de 6 : x − y = 6.</li>
-      </ul>
-      <p>On obtient donc le système :</p>
-      <div class="bloc formule">
-        <p>x + y = 30</p>
-        <p>x − y = 6</p>
-      </div>
-      <p><strong>Étape 3 — Additionner les deux équations :</strong></p>
-      <p>(x + y) + (x − y) = 30 + 6.</p>
-      <p>2x = 36, donc x = 18.</p>
-      <p><strong>Étape 4 — Remplacer x dans la première équation :</strong></p>
-      <p>18 + y = 30, donc y = 12.</p>
-      <p><strong>Étape 5 — Vérifier les deux informations :</strong></p>
-      <p>18 + 12 = 30 et 18 − 12 = 6.</p>
-      <div class="bloc reponse">Les deux nombres sont 18 et 12.</div>
-
-      <p><strong>Piège :</strong> « dépasse de 6 » ne signifie pas que le premier nombre vaut 6. Cela signifie que la différence entre les deux nombres est 6.</p>
-    `
-  },
-  {
-    title: "Quand intervient-il ? Géométrie : triangles, hauteurs et diagonales",
-    content: `
-      <h3>Les formes d'exercices concernés</h3>
-      <ul>
-        <li>Calculer un angle manquant dans un triangle.</li>
-        <li>Identifier ou construire une hauteur.</li>
-        <li>Calculer l'aire d'un triangle à partir de sa base et de sa hauteur.</li>
-        <li>Calculer le périmètre d'une figure.</li>
-        <li>Identifier les diagonales d'un quadrilatère.</li>
-        <li>Utiliser les propriétés d'un rectangle, d'un carré, d'un parallélogramme ou d'un losange.</li>
-        <li>Déterminer une longueur à partir d'une propriété géométrique donnée.</li>
-      </ul>
-
-      <h3>Reconnaître les éléments sur une figure</h3>
-      <p>Une lettre seule désigne généralement un point. Un segment relie deux points. Une hauteur est une droite ou un segment qui part d'un sommet et tombe perpendiculairement sur le côté opposé, ou sur son prolongement.</p>
-
-      <div class="bloc schema">
-        <p><strong>Exemple de triangle et de hauteur</strong></p>
-        <svg viewBox="0 0 340 220" width="100%" role="img" aria-label="Triangle ABC avec hauteur AH perpendiculaire à BC">
-          <polygon points="55,180 285,180 170,35" fill="#60a5fa" fill-opacity="0.10" stroke="currentColor" stroke-width="2.5"/>
-          <line x1="170" y1="35" x2="170" y2="180" stroke="#e58a24" stroke-width="3" stroke-dasharray="6 4"/>
-          <path d="M170 180 L170 166 L184 166 L184 180" fill="none" stroke="#e58a24" stroke-width="2"/>
-          <circle cx="55" cy="180" r="3" fill="currentColor"/>
-          <circle cx="285" cy="180" r="3" fill="currentColor"/>
-          <circle cx="170" cy="35" r="3" fill="currentColor"/>
-          <text x="40" y="198" fill="currentColor" font-size="13">B</text>
-          <text x="290" y="198" fill="currentColor" font-size="13">C</text>
-          <text x="170" y="24" text-anchor="middle" fill="currentColor" font-size="13">A</text>
-          <text x="178" y="105" fill="#e58a24" font-size="13">AH</text>
-          <text x="178" y="198" fill="currentColor" font-size="12">H</text>
-        </svg>
-        <p>AH est la hauteur relative au côté BC. Le petit carré indique un angle droit : AH est perpendiculaire à BC.</p>
-      </div>
-
-      <h3>Exemple : calculer une aire</h3>
-      <p>Un triangle possède une base de 12 cm et une hauteur correspondante de 7 cm. Calcule son aire.</p>
-      <p><strong>Données :</strong> base = 12 cm ; hauteur = 7 cm.</p>
-      <p><strong>Formule :</strong> aire = (base × hauteur) ÷ 2.</p>
-      <p><strong>Application :</strong> (12 × 7) ÷ 2 = 84 ÷ 2 = 42 cm².</p>
-      <div class="bloc reponse">L'aire du triangle est de 42 cm².</div>
-
-      <h3>Reconnaître une diagonale</h3>
-      <div class="bloc schema">
-        <svg viewBox="0 0 320 170" width="100%" role="img" aria-label="Rectangle ABCD avec ses deux diagonales AC et BD">
-          <rect x="55" y="30" width="210" height="110" fill="#60a5fa" fill-opacity="0.08" stroke="currentColor" stroke-width="2.5"/>
-          <line x1="55" y1="30" x2="265" y2="140" stroke="#e58a24" stroke-width="2.5"/>
-          <line x1="265" y1="30" x2="55" y2="140" stroke="#16a085" stroke-width="2.5"/>
-          <text x="43" y="24" fill="currentColor" font-size="13">A</text>
-          <text x="270" y="24" fill="currentColor" font-size="13">B</text>
-          <text x="270" y="156" fill="currentColor" font-size="13">C</text>
-          <text x="43" y="156" fill="currentColor" font-size="13">D</text>
-        </svg>
-        <p>Dans ce rectangle, AC et BD sont les diagonales : elles relient deux sommets opposés.</p>
-      </div>
-
-      <p><strong>Pièges :</strong> ne confonds pas hauteur et côté oblique. Pour calculer une aire avec une base donnée, il faut utiliser la hauteur perpendiculaire à cette base. Une diagonale ne relie pas deux sommets voisins.</p>
-    `
-  },
-  {
-    title: "Quand intervient-il ? Repérage et coordonnées",
-    content: `
-      <h3>Les formes d'exercices concernés</h3>
-      <ul>
-        <li>Lire les coordonnées d'un point sur un repère.</li>
-        <li>Placer un point à partir de ses coordonnées.</li>
-        <li>Identifier l'abscisse et l'ordonnée.</li>
-        <li>Déterminer si plusieurs points sont alignés ou appartiennent à un même axe.</li>
-        <li>Lire des informations sur un graphique.</li>
-      </ul>
-
-      <h3>Les termes à reconnaître</h3>
-      <p><strong>Repère :</strong> dessin formé de deux axes gradués qui permettent de situer des points.</p>
-      <p><strong>Origine O :</strong> point où les deux axes se croisent.</p>
-      <p><strong>Abscisse :</strong> première coordonnée, lue horizontalement.</p>
-      <p><strong>Ordonnée :</strong> deuxième coordonnée, lue verticalement.</p>
-      <p>Dans A(3 ; 2), le point A se trouve à 3 unités horizontalement et 2 unités verticalement à partir de l'origine.</p>
-
-      <div class="bloc schema">
-        <p><strong>Lecture d'un point dans un repère</strong></p>
-        <svg viewBox="0 0 340 260" width="100%" role="img" aria-label="Repère avec origine O et point A de coordonnées 3 et 2">
-          <defs>
-            <pattern id="gridMathA" width="32" height="32" patternUnits="userSpaceOnUse">
-              <path d="M32 0 L0 0 0 32" fill="none" stroke="currentColor" stroke-opacity="0.18" stroke-width="1"/>
-            </pattern>
-          </defs>
-          <rect x="34" y="18" width="272" height="224" fill="url(#gridMathA)"/>
-          <line x1="34" y1="210" x2="310" y2="210" stroke="currentColor" stroke-width="2"/>
-          <line x1="66" y1="242" x2="66" y2="18" stroke="currentColor" stroke-width="2"/>
-          <path d="M310 210 l-8 -4 v8 z M66 18 l-4 8 h8 z" fill="currentColor"/>
-          <line x1="162" y1="210" x2="162" y2="146" stroke="#e58a24" stroke-width="2" stroke-dasharray="5 4"/>
-          <line x1="66" y1="146" x2="162" y2="146" stroke="#e58a24" stroke-width="2" stroke-dasharray="5 4"/>
-          <circle cx="162" cy="146" r="5" fill="#e58a24"/>
-          <text x="170" y="137" fill="currentColor" font-size="14">A(3 ; 2)</text>
-          <text x="51" y="226" fill="currentColor" font-size="12">O</text>
-          <text x="315" y="215" fill="currentColor" font-size="13">x</text>
-          <text x="57" y="15" fill="currentColor" font-size="13">y</text>
-          <text x="155" y="228" fill="currentColor" font-size="11">3</text>
-          <text x="48" y="150" fill="currentColor" font-size="11">2</text>
-          <text x="70" y="228" fill="currentColor" font-size="10">0</text>
-        </svg>
-        <p>Pour placer A(3 ; 2), on avance de 3 unités sur l'axe horizontal, puis on monte de 2 unités. Les pointillés montrent les deux déplacements.</p>
-      </div>
-
-      <h3>Exemple : retrouver les coordonnées</h3>
-      <p>Un point B se trouve à 4 unités à droite de l'origine et 3 unités au-dessus de l'axe horizontal. Ses coordonnées sont B(4 ; 3).</p>
-      <p><strong>Ordre à respecter :</strong> abscisse d'abord, ordonnée ensuite.</p>
-      <p><strong>Piège :</strong> B(3 ; 4) n'est pas le même point que B(4 ; 3). Inverser les coordonnées change la position du point.</p>
-    `
-  },
-  {
-    title: "Quand intervient-il ? Grandeurs, mesures et données",
-    content: `
-      <h3>Les formes d'exercices concernés</h3>
-      <ul>
-        <li>Convertir des longueurs, masses, capacités, durées et surfaces.</li>
-        <li>Calculer un périmètre, une aire ou un volume selon la figure.</li>
-        <li>Résoudre un problème avec des unités différentes.</li>
-        <li>Calculer une moyenne à partir d'une série de valeurs.</li>
-        <li>Lire un tableau ou un diagramme et en tirer une information.</li>
-      </ul>
-
-      <h3>Les indices à reconnaître</h3>
-      <table>
-        <tr><th>Indice</th><th>Réflexe</th></tr>
-        <tr><td>Deux unités différentes</td><td>Convertir avant de calculer</td></tr>
-        <tr><td>« Tour de la figure »</td><td>Périmètre</td></tr>
-        <tr><td>« Surface », « couvrir », « carreler »</td><td>Aire</td></tr>
-        <tr><td>« Contenance », « remplir »</td><td>Capacité ou volume</td></tr>
-        <tr><td>« Moyenne »</td><td>Somme des valeurs ÷ nombre de valeurs</td></tr>
-        <tr><td>« Le plus fréquent »</td><td>Valeur qui apparaît le plus souvent</td></tr>
-      </table>
-
-      <h3>Exemple : conversion avant calcul</h3>
-      <p>Une corde mesure 2,5 m. On la coupe en morceaux de 25 cm. Combien de morceaux obtient-on ?</p>
-      <p><strong>Étape 1 :</strong> convertir 2,5 m en centimètres : 2,5 × 100 = 250 cm.</p>
-      <p><strong>Étape 2 :</strong> diviser la longueur totale par la longueur d'un morceau : 250 ÷ 25 = 10.</p>
-      <div class="bloc reponse">On obtient 10 morceaux.</div>
-
-      <h3>Exemple : moyenne</h3>
-      <p>Un élève obtient 8, 12, 14 et 16 sur quatre interrogations. Calcule sa moyenne.</p>
-      <p><strong>Étape 1 :</strong> additionner les notes : 8 + 12 + 14 + 16 = 50.</p>
-      <p><strong>Étape 2 :</strong> diviser par le nombre de notes : 50 ÷ 4 = 12,5.</p>
-      <div class="bloc reponse">Sa moyenne est de 12,5.</div>
-      <p><strong>Piège :</strong> ne divise pas par la valeur de la note la plus élevée. On divise par le nombre de valeurs.</p>
-    `
-  },
-  {
-    title: "Synthèse : reconnaître, choisir, résoudre",
-    content: `
-      <p>Cette fiche est à revoir avant une épreuve. Elle ne remplace pas les explications précédentes : elle permet de retrouver rapidement le bon réflexe.</p>
-      <table>
-        <tr><th>Indices dans l'exercice</th><th>Ce qu'on cherche</th><th>Réflexe de résolution</th></tr>
-        <tr><td>« Une fraction de », « les trois quarts »</td><td>Une partie d'un total</td><td>Diviser par le dénominateur, multiplier par le numérateur</td></tr>
-        <tr><td>« Au même tarif », « prix unitaire »</td><td>Une quantité proportionnelle</td><td>Passer à l'unité puis multiplier</td></tr>
-        <tr><td>« Réduction de X % »</td><td>Un nouveau prix</td><td>Calculer la réduction puis la soustraire</td></tr>
-        <tr><td>« Un nombre augmenté de »</td><td>Une inconnue</td><td>Traduire en équation</td></tr>
-        <tr><td>« Somme et différence de deux nombres »</td><td>Deux inconnues</td><td>Écrire deux relations puis résoudre le système</td></tr>
-        <tr><td>« Hauteur relative à une base »</td><td>Aire du triangle</td><td>Base × hauteur ÷ 2</td></tr>
-        <tr><td>« Relier deux sommets opposés »</td><td>Une diagonale</td><td>Repérer les sommets non voisins</td></tr>
-        <tr><td>« Coordonnées d'un point »</td><td>Position dans le repère</td><td>Lire horizontalement puis verticalement</td></tr>
-        <tr><td>Unités différentes</td><td>Une mesure comparable</td><td>Convertir avant le calcul</td></tr>
-        <tr><td>« Moyenne »</td><td>Valeur moyenne d'une série</td><td>Somme ÷ nombre de valeurs</td></tr>
-      </table>
-
-      <h3>La méthode à appliquer à chaque exercice</h3>
-      <ol>
-        <li>Lire la question finale : quel résultat faut-il donner ?</li>
-        <li>Relever les données utiles et leurs unités.</li>
-        <li>Identifier les indices qui indiquent la méthode.</li>
-        <li>Écrire la formule ou la relation avant de remplacer les données.</li>
-        <li>Effectuer les calculs dans l'ordre, sans supprimer les étapes.</li>
-        <li>Vérifier que le résultat répond bien à la question et possède la bonne unité.</li>
-      </ol>
-
-      <div class="bloc attention">
-        <strong>Les pièges à surveiller</strong>
-        <ul>
-          <li>Confondre la partie et le total.</li>
-          <li>Inverser une opération dans une équation.</li>
-          <li>Utiliser une longueur oblique à la place d'une hauteur.</li>
-          <li>Inverser abscisse et ordonnée.</li>
-          <li>Calculer avant d'avoir converti les unités.</li>
-          <li>Donner un résultat sans préciser son unité ou ce qu'il représente.</li>
-        </ul>
-      </div>
-    `
-  },
-  {
-    title: "Défi d'examen : relier plusieurs indices",
-    content: `
-      <div class="bloc signal">
-        <div class="bloc-label">Mise en situation</div>
-        <p>Une école prépare une sortie. Elle dispose de 180 000 FC. Le transport consomme les deux cinquièmes du budget. Le reste est partagé également entre 6 groupes pour les activités.</p>
-        <p>Combien reçoit chaque groupe ?</p>
-      </div>
-
-      <h3>Comment décoder l'exercice</h3>
-      <p>La question ne demande pas directement de calculer les deux cinquièmes. Elle demande la somme reçue par un groupe. Il faut donc effectuer plusieurs opérations.</p>
-
-      <h3>Résolution détaillée</h3>
-      <p><strong>Étape 1 — Identifier le budget total :</strong> 180 000 FC.</p>
-      <p><strong>Étape 2 — Calculer la dépense de transport :</strong></p>
-      <p>180 000 × 2 ÷ 5 = 72 000 FC.</p>
-      <p><strong>Étape 3 — Calculer le reste :</strong></p>
-      <p>180 000 − 72 000 = 108 000 FC.</p>
-      <p><strong>Étape 4 — Partager le reste entre les six groupes :</strong></p>
-      <p>108 000 ÷ 6 = 18 000 FC.</p>
-      <div class="bloc reponse">Chaque groupe reçoit 18 000 FC.</div>
-
-      <h3>Vérification</h3>
-      <p>Les six groupes reçoivent ensemble 6 × 18 000 = 108 000 FC. En ajoutant le transport : 108 000 + 72 000 = 180 000 FC. Le budget est entièrement utilisé.</p>
-
-      <p><strong>Ce qu'il fallait reconnaître :</strong> une fraction d'un total, une soustraction pour trouver le reste, puis un partage égal. L'énoncé ne donne pas le nom de ces trois opérations : c'est à toi de les repérer.</p>
     `
   }
 ];
 
-
-
 const questions = [
   {
-    text: "Une classe compte 240 élèves. Les trois huitièmes participent à une activité. Combien d'élèves participent ?",
-    options: [
-      "30 élèves",
-      "60 élèves",
-      "90 élèves",
-      "180 élèves"
-    ],
-    correct: 2
+    text: "Calcule 5 − (−3).",
+    options: ["2", "8", "−8", "−2"],
+    correct: 1,
+    explication: "Soustraire un négatif revient à ajouter : 5 + 3 = 8. L’erreur 2 vient de 5 − 3."
   },
   {
-    text: "Les trois cinquièmes d'une somme valent 45 000 FC. Quelle est la somme entière ?",
-    options: [
-      "27 000 FC",
-      "60 000 FC",
-      "75 000 FC",
-      "90 000 FC"
-    ],
-    correct: 2
+    text: "Calcule (−2) × (−3).",
+    options: ["−6", "−5", "5", "6"],
+    correct: 3,
+    explication: "Deux signes identiques donnent un produit positif : 2 × 3 = 6."
   },
   {
-    text: "4 mètres de tissu coûtent 18 000 FC. Au même tarif, combien coûtent 7 mètres ?",
-    options: [
-      "25 000 FC",
-      "28 000 FC",
-      "31 500 FC",
-      "36 000 FC"
-    ],
-    correct: 2
+    text: "Simplifie 2³ × 2⁴.",
+    options: ["2⁷", "4⁷", "2¹²", "4¹²"],
+    correct: 0,
+    explication: "Même base : on conserve 2 et on additionne les exposants : 3 + 4 = 7."
   },
   {
-    text: "Un article coûte 80 000 FC. Son prix est réduit de 15 %. Quel est son nouveau prix ?",
-    options: [
-      "12 000 FC",
-      "65 000 FC",
-      "68 000 FC",
-      "92 000 FC"
-    ],
-    correct: 2
+    text: "Simplifie (3²)⁴.",
+    options: ["3⁶", "9⁸", "3⁸", "3²"],
+    correct: 2,
+    explication: "Puissance de puissance : on multiplie les exposants : 2 × 4 = 8."
   },
   {
-    text: "Un nombre augmenté de 9 donne 31. Quelle équation permet de trouver ce nombre x ?",
-    options: [
-      "x − 9 = 31",
-      "9x = 31",
-      "x + 9 = 31",
-      "x ÷ 9 = 31"
-    ],
-    correct: 2
+    text: "Calcule √(9 + 16).",
+    options: ["7", "5", "25", "4"],
+    correct: 1,
+    explication: "On calcule d’abord la somme sous la racine : 9 + 16 = 25, puis √25 = 5."
   },
   {
-    text: "Deux nombres ont une somme de 42 et une différence de 8. Quel est le plus grand nombre ?",
-    options: [
-      "17",
-      "21",
-      "25",
-      "34"
-    ],
-    correct: 2
+    text: "Convertis 2,5 m² en dm².",
+    options: ["25", "2 500", "250", "0,25"],
+    correct: 2,
+    explication: "Pour les aires, une marche vaut 100 : 2,5 × 100 = 250 dm²."
   },
   {
-    text: "Dans un triangle, une base mesure 14 cm et la hauteur correspondante mesure 9 cm. Quelle est son aire ?",
-    options: [
-      "126 cm²",
-      "63 cm²",
-      "46 cm²",
-      "23 cm²"
-    ],
-    correct: 1
+    text: "Résous 4(x − 3) = 2x + 6.",
+    options: ["x = 3", "x = 6", "x = −9", "x = 9"],
+    correct: 3,
+    explication: "4x − 12 = 2x + 6, donc 2x = 18 et x = 9."
   },
   {
-    text: "Dans le triangle ABC, AH est perpendiculaire à BC et H appartient à BC. Quel élément représente AH ?",
-    options: [
-      "Une diagonale",
-      "Une médiane obligatoirement",
-      "Une hauteur relative à BC",
-      "Un côté du triangle"
-    ],
-    correct: 2
+    text: "Un triangle a pour côtés 6, 8 et 10. Quelle démarche permet de vérifier s’il est rectangle ?",
+    options: ["Additionner les trois côtés", "Calculer son aire", "Comparer le carré du plus grand côté à la somme des carrés des deux autres", "Diviser le plus grand côté par 2"],
+    correct: 2,
+    explication: "La réciproque de Pythagore donne 10² = 6² + 8², soit 100 = 100."
   },
   {
-    text: "Un point A a pour coordonnées A(4 ; 2). On veut placer le point sur un repère. Quel déplacement faut-il effectuer depuis l'origine ?",
-    options: [
-      "2 unités horizontalement puis 4 verticalement",
-      "4 unités horizontalement puis 2 verticalement",
-      "4 unités verticalement puis 2 horizontalement",
-      "2 unités dans les deux directions"
-    ],
-    correct: 1
+    text: "Deux achats donnent : 2 cahiers et 3 stylos coûtent 1 300 FC ; 2 cahiers et 1 stylo coûtent 900 FC. Quelle méthode est la plus rapide ?",
+    options: ["Substitution", "Combinaison par soustraction", "Règle de trois", "Pythagore"],
+    correct: 1,
+    explication: "Les deux achats contiennent le même nombre de cahiers. En soustrayant les égalités, les cahiers disparaissent."
   },
   {
-    text: "Une corde mesure 3,6 m. On la découpe en morceaux de 30 cm. Combien de morceaux complets obtient-on ?",
-    options: [
-      "1,2",
-      "10",
-      "12",
-      "120"
-    ],
-    correct: 2
+    text: "Une échelle est posée contre un mur. Son pied est à 3 m du mur et son sommet atteint 4 m de hauteur. Que cherche-t-on si la question demande sa longueur ?",
+    options: ["L’hypoténuse", "L’aire du mur", "Le périmètre du mur", "La hauteur déjà donnée"],
+    correct: 0,
+    explication: "L’échelle est le côté opposé à l’angle droit : c’est l’hypoténuse."
   },
   {
-    text: "Un élève obtient 9, 11, 14 et 18. Quelle est sa moyenne ?",
-    options: [
-      "12",
-      "13",
-      "14",
-      "52"
-    ],
-    correct: 1
+    text: "Quelle formule donne la hauteur d’un triangle isocèle de côté égal c et de base b ?",
+    options: ["h = c + b ÷ 2", "h = c√3 ÷ 2", "h² = c² − (b ÷ 2)²", "h² = c² + (b ÷ 2)²"],
+    correct: 2,
+    explication: "La hauteur coupe la base en deux. Le triangle rectangle obtenu donne h² = c² − (b ÷ 2)²."
   },
   {
-    text: "Une école possède 180 000 FC. Les deux cinquièmes sont utilisés pour le transport. Le reste est partagé également entre 6 groupes. Quelle somme reçoit chaque groupe ?",
-    options: [
-      "12 000 FC",
-      "18 000 FC",
-      "30 000 FC",
-      "36 000 FC"
-    ],
-    correct: 1
+    text: "On veut peindre un mur. Quelle grandeur faut-il calculer ?",
+    options: ["Un volume", "Un périmètre", "Une masse", "Une aire"],
+    correct: 3,
+    explication: "Peindre couvre une surface : on calcule une aire, généralement en m²."
   },
   {
-    text: "Un commerçant achète 15 articles à 800 FC chacun et les revend tous à 1 000 FC chacun. Quel est son bénéfice total ?",
-    options: [
-      "3 000 FC",
-      "12 000 FC",
-      "15 000 FC",
-      "27 000 FC"
-    ],
-    correct: 1
+    text: "On veut savoir combien de litres contient un réservoir. Quelle grandeur faut-il calculer ?",
+    options: ["Un volume", "Une aire", "Un périmètre", "Une longueur"],
+    correct: 0,
+    explication: "La capacité d’un réservoir dépend de son volume. On peut ensuite convertir les m³ en litres."
   },
   {
-    text: "Un rectangle mesure 12 cm de longueur et 7 cm de largeur. Quelle affirmation est correcte ?",
-    options: [
-      "Son périmètre est 84 cm",
-      "Son aire est 38 cm²",
-      "Son périmètre est 38 cm et son aire est 84 cm²",
-      "Son aire et son périmètre valent tous deux 38"
-    ],
-    correct: 2
+    text: "3 pains coûtent 600 FC. Quelle méthode permet de trouver le prix de 5 pains au même tarif unitaire ?",
+    options: ["Pythagore", "Moyenne", "Conversion", "Règle de trois"],
+    correct: 3,
+    explication: "Le prix est proportionnel à la quantité : x = (5 × 600) ÷ 3 = 1 000 FC."
   },
   {
-    text: "Deux nombres vérifient x + y = 50 et x − y = 10. Quelles sont leurs valeurs ?",
-    options: [
-      "x = 20 et y = 30",
-      "x = 30 et y = 20",
-      "x = 40 et y = 10",
-      "x = 25 et y = 25"
-    ],
-    correct: 1
+    text: "Un carré de côté 5 cm a un périmètre de 20 cm. On demande sa diagonale. Quelle donnée est inutile ?",
+    options: ["Le côté de 5 cm", "Le périmètre de 20 cm", "Les deux données sont indispensables", "Il manque une donnée"],
+    correct: 1,
+    explication: "La diagonale se calcule avec le côté : d² = 5² + 5². Le périmètre n’apporte aucune information supplémentaire."
   },
   {
-    text: "Un élève affirme que les trois quarts de 80 sont égaux à 80 ÷ 3 × 4. Quelle correction faut-il faire ?",
-    options: [
-      "Il faut calculer 80 × 3 ÷ 4",
-      "Il faut calculer 80 ÷ 4 × 3",
-      "Il faut calculer 80 ÷ 3 ÷ 4",
-      "Son calcul est correct"
-    ],
-    correct: 1
+    text: "Pour résoudre 3x + 5 = 20, quelle est la première étape la plus directe ?",
+    options: ["Diviser par 3", "Ajouter 5", "Retirer 5 des deux côtés", "Multiplier par 5"],
+    correct: 2,
+    explication: "On retire 5 des deux côtés : 3x = 15. On divise ensuite par 3."
+  },
+  {
+    text: "ABC est rectangle en A, AB = 6 cm et AC = 8 cm. Combien vaut BC ?",
+    options: ["14 cm", "100 cm", "10 cm", "√28 cm"],
+    correct: 2,
+    explication: "BC² = 36 + 64 = 100, donc BC = 10 cm."
+  },
+  {
+    text: "ABC est rectangle en A, BC = 13 cm et AB = 5 cm. Combien vaut AC ?",
+    options: ["8 cm", "18 cm", "√194 cm", "12 cm"],
+    correct: 3,
+    explication: "L’hypoténuse est connue : AC² = 169 − 25 = 144, donc AC = 12 cm."
+  },
+  {
+    text: "Un rectangle mesure 8 m sur 6 m. Quelle est la longueur de sa diagonale ?",
+    options: ["14 m", "10 m", "48 m", "√14 m"],
+    correct: 1,
+    explication: "d² = 8² + 6² = 100, donc d = 10 m."
+  },
+  {
+    text: "Un triangle a pour côtés 5 cm, 6 cm et 8 cm. Que peut-on conclure ?",
+    options: ["Il n’est pas rectangle car 64 ≠ 61", "Il est rectangle car 64 = 25 + 36", "Il est rectangle car 8 = 5 + 6", "Il est forcément rectangle"],
+    correct: 0,
+    explication: "8² = 64, alors que 5² + 6² = 61. L’égalité de Pythagore n’est pas vérifiée."
+  },
+  {
+    text: "Un maçon mesure 60 cm, 80 cm et 100 cm sur une dalle. Que conclut-il ?",
+    options: ["Le coin n’est pas droit", "Il faut mesurer un quatrième côté", "Le coin est droit car 100² = 60² + 80²", "Le coin est droit car 100 = 60 + 40"],
+    correct: 2,
+    explication: "10 000 = 3 600 + 6 400. La réciproque de Pythagore prouve que le triangle est rectangle."
+  },
+  {
+    text: "Un terrain rectangulaire mesure 40 m sur 30 m. La clôture coûte 2 500 FC le mètre. Quel est le coût avant remise ?",
+    options: ["140 000 FC", "350 000 FC", "250 000 FC", "100 000 FC"],
+    correct: 1,
+    explication: "Périmètre = 2 × (40 + 30) = 140 m. Coût = 140 × 2 500 = 350 000 FC."
+  },
+  {
+    text: "Un toit isocèle a une base de 8 m et deux côtés de 5 m. Quelle est sa hauteur ?",
+    options: ["3 m", "4 m", "√89 m", "6 m"],
+    correct: 0,
+    explication: "La demi-base vaut 4 m. h² = 25 − 16 = 9, donc h = 3 m."
+  },
+  {
+    text: "Un cycliste roule 3 km vers le nord puis 4 km vers l’est. Quelle est sa distance à vol d’oiseau depuis son point de départ ?",
+    options: ["7 km", "1 km", "12 km", "5 km"],
+    correct: 3,
+    explication: "Les deux directions sont perpendiculaires. D² = 9 + 16 = 25, donc D = 5 km."
+  },
+  {
+    text: "Un réservoir cylindrique contient 6,28 m³. Combien cela représente-t-il de litres ?",
+    options: ["628 L", "6,28 L", "62,8 L", "6 280 L"],
+    correct: 3,
+    explication: "1 m³ = 1 000 L. Donc 6,28 × 1 000 = 6 280 L."
+  },
+  {
+    text: "Après une remise de 20 %, un article coûte 16 000 FC. Quel était son prix initial ?",
+    options: ["12 800 FC", "19 200 FC", "20 000 FC", "80 000 FC"],
+    correct: 2,
+    explication: "Après une remise de 20 %, on paie 80 % du prix initial. 16 000 ÷ 0,8 = 20 000 FC."
+  },
+  {
+    text: "Quatre élèves ont une moyenne de 12. Trois notes sont 10, 12 et 14. Quelle est la quatrième note ?",
+    options: ["10", "12", "14", "16"],
+    correct: 1,
+    explication: "La somme des quatre notes doit être 4 × 12 = 48. La note manquante vaut 48 − (10 + 12 + 14) = 12."
+  },
+  {
+    text: "Le point A(3 ; −2) est symétrique par rapport à l’axe des abscisses. Quelles sont les coordonnées de son image ?",
+    options: ["(−3 ; 2)", "(3 ; 2)", "(−3 ; −2)", "(2 ; 3)"],
+    correct: 1,
+    explication: "Par rapport à l’axe des abscisses, l’abscisse reste identique et l’ordonnée change de signe."
+  },
+  {
+    text: "Un réservoir cylindrique a un diamètre de 2 m et une hauteur de 3 m. Quel est son volume approximatif avec π = 3,14 ?",
+    options: ["3,14 m³", "6,28 m³", "9,42 m³", "18,84 m³"],
+    correct: 2,
+    explication: "Le rayon vaut 1 m. V = π × r² × h = 3,14 × 1² × 3 = 9,42 m³."
+  },
+  {
+    text: "Un réservoir contient 9 420 L. Un camion transporte 1 500 L par voyage. Combien de voyages faut-il au minimum ?",
+    options: ["6", "6,28", "7", "8"],
+    correct: 2,
+    explication: "9 420 ÷ 1 500 = 6,28. Comme on ne peut pas effectuer 0,28 voyage séparément, il faut arrondir au-dessus : 7 voyages."
+  },
+  {
+    text: "Un réservoir contient 9 420 L d’eau facturée 2 000 FC par 1 000 L. Quelle est la facture après une remise de 10 % ?",
+    options: ["16 956 FC", "18 840 FC", "1 884 FC", "20 724 FC"],
+    correct: 0,
+    explication: "Coût initial : 9,42 × 2 000 = 18 840 FC. Remise : 1 884 FC. Coût final : 16 956 FC."
   }
 ];
 
