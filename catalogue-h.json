@@ -12,7 +12,7 @@
             {
               "id": "h_maths7",
               "titre": "Mathématiques 7e",
-              "description": "Cours complet de mathématiques — 7e année secondaire.",
+              "description": "Raisonnement, formules et résolution de problèmes — 7e année.",
               "icone": "🔢",
               "niveau": "7e Année",
               "version": 1,
@@ -27,11 +27,26 @@
             {
               "id": "h_svt7",
               "titre": "SVT 7e",
-              "description": "Sciences de la Vie et de la Terre — 7e année secondaire.",
+              "description": "Analyse de schémas, fonctions et cas pratiques — 7e année.",
               "icone": "🌱",
               "niveau": "7e Année",
               "version": 1,
               "fichiers": ["HSVT7.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_7e_langues",
+          "nom": "Français & Langues",
+          "cours": [
+            {
+              "id": "h_langues7",
+              "titre": "Règles & Analyse 7e",
+              "description": "Décodage des règles d'accord, structures et pièges — 7e année.",
+              "icone": "✍️",
+              "niveau": "7e Année",
+              "version": 1,
+              "fichiers": ["HLangues7.ecolia"]
             }
           ]
         }
@@ -49,7 +64,7 @@
             {
               "id": "h_maths8",
               "titre": "Mathématiques 8e",
-              "description": "Cours complet de mathématiques — 8e année secondaire.",
+              "description": "Modélisation, équations et méthodes appliquées — 8e année.",
               "icone": "🔢",
               "niveau": "8e Année",
               "version": 1,
@@ -64,11 +79,26 @@
             {
               "id": "h_svt8",
               "titre": "SVT 8e",
-              "description": "Sciences de la Vie et de la Terre — 8e année secondaire.",
+              "description": "Mécanismes, interprétation et cas d'application — 8e année.",
               "icone": "🌱",
               "niveau": "8e Année",
               "version": 1,
               "fichiers": ["HSVT8.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_8e_sciences",
+          "nom": "Sciences & Règles",
+          "cours": [
+            {
+              "id": "h_sciences8",
+              "titre": "Sciences & Règles 8e",
+              "description": "Grandeurs, règles et raisonnement — 8e année.",
+              "icone": "🔬",
+              "niveau": "8e Année",
+              "version": 1,
+              "fichiers": ["HSciences8.ecolia"]
             }
           ]
         }
@@ -101,11 +131,26 @@
             {
               "id": "h_physique1",
               "titre": "Physique 1ère",
-              "description": "Cours de physique — 1ère année.",
+              "description": "Modélisation et résolution — 1ère année.",
               "icone": "⚙️",
               "niveau": "1ère Année",
               "version": 1,
               "fichiers": ["HPhysique1.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_1ere_latin",
+          "nom": "Latin",
+          "cours": [
+            {
+              "id": "h_latin1",
+              "titre": "Latin 1ère",
+              "description": "Déclinaisons, fonctions et traduction raisonnée — 1ère année.",
+              "icone": "🏛️",
+              "niveau": "1ère Année",
+              "version": 1,
+              "fichiers": ["HLatin1.ecolia"]
             }
           ]
         }
@@ -145,6 +190,21 @@
               "fichiers": ["HChimie2.ecolia"]
             }
           ]
+        },
+        {
+          "id": "h_2e_latin",
+          "nom": "Latin",
+          "cours": [
+            {
+              "id": "h_latin2",
+              "titre": "Latin 2e",
+              "description": "Syntaxe, cas et analyse de textes — 2e année.",
+              "icone": "🏛️",
+              "niveau": "2e Année",
+              "version": 1,
+              "fichiers": ["HLatin2.ecolia"]
+            }
+          ]
         }
       ]
     },
@@ -167,6 +227,21 @@
               "fichiers": ["HPhysique3.ecolia"]
             }
           ]
+        },
+        {
+          "id": "h_3e_gestion",
+          "nom": "Comptabilité & Gestion",
+          "cours": [
+            {
+              "id": "h_gestion3",
+              "titre": "Comptabilité & Gestion 3e",
+              "description": "Écritures, calculs et cas appliqués — 3e année.",
+              "icone": "📊",
+              "niveau": "3e Année",
+              "version": 1,
+              "fichiers": ["HGestion3.ecolia"]
+            }
+          ]
         }
       ]
     },
@@ -187,6 +262,21 @@
               "niveau": "4e Année",
               "version": 1,
               "fichiers": ["HMathsScientifiques4.ecolia"]
+            }
+          ]
+        },
+        {
+          "id": "h_4e_physique",
+          "nom": "Physique",
+          "cours": [
+            {
+              "id": "h_physique4",
+              "titre": "Physique 4e (EXETAT)",
+              "description": "Problèmes combinés et méthode d'examen — 4e année.",
+              "icone": "⚙️",
+              "niveau": "4e Année",
+              "version": 1,
+              "fichiers": ["HPhysique4.ecolia"]
             }
           ]
         }
