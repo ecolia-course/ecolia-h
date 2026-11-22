@@ -1,93 +1,64 @@
 {
+  "version": 2,
   "categories": [
     {
       "id": "h_7e",
       "nom": "7e Année",
       "icone": "📗",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_7e_maths",
-          "nom": "Mathématiques",
-          "cours": [
-            {
-              "id": "h_maths7",
-              "titre": "Mathématiques 7e",
-              "description": "Arithmétique, fractions, proportionnalité, géométrie et statistiques.",
-              "icone": "🔢",
-              "niveau": "7e Année",
-              "version": 1,
-              "fichiers": [
-                "HMaths7.ecolia"
-              ]
-            }
+          "id": "h_maths7",
+          "titre": "Mathématiques 7e",
+          "description": "Arithmétique, fractions, proportionnalité, géométrie et statistiques.",
+          "icone": "🔢",
+          "niveau": "7e Année",
+          "version": 1,
+          "fichiers": [
+            "HMaths7.ecolia"
           ]
         },
         {
-          "id": "h_7e_physique",
-          "nom": "Sciences physiques",
-          "cours": [
-            {
-              "id": "h_physique7",
-              "titre": "Sciences physiques 7e",
-              "description": "Grandeurs, mesures, unités, conversions et premières relations physiques.",
-              "icone": "⚙️",
-              "niveau": "7e Année",
-              "version": 1,
-              "fichiers": [
-                "HPhysique7.ecolia"
-              ]
-            }
+          "id": "h_physique7",
+          "titre": "Sciences physiques 7e",
+          "description": "Grandeurs, mesures, unités, conversions et premières relations physiques.",
+          "icone": "⚙️",
+          "niveau": "7e Année",
+          "version": 1,
+          "fichiers": [
+            "HPhysique7.ecolia"
           ]
         },
         {
-          "id": "h_7e_francais",
-          "nom": "Français",
-          "cours": [
-            {
-              "id": "h_francais7",
-              "titre": "Français 7e",
-              "description": "Grammaire, accords, natures et fonctions en contexte.",
-              "icone": "✍️",
-              "niveau": "7e Année",
-              "version": 1,
-              "fichiers": [
-                "HFrancais7.ecolia"
-              ]
-            }
+          "id": "h_francais7",
+          "titre": "Français 7e",
+          "description": "Grammaire, accords, natures et fonctions en contexte.",
+          "icone": "✍️",
+          "niveau": "7e Année",
+          "version": 1,
+          "fichiers": [
+            "HFrancais7.ecolia"
           ]
         },
         {
-          "id": "h_7e_anglais",
-          "nom": "Anglais",
-          "cours": [
-            {
-              "id": "h_anglais7",
-              "titre": "Anglais 7e",
-              "description": "Structures, temps, règles et pièges d’usage.",
-              "icone": "🇬🇧",
-              "niveau": "7e Année",
-              "version": 1,
-              "fichiers": [
-                "HAnglais7.ecolia"
-              ]
-            }
+          "id": "h_anglais7",
+          "titre": "Anglais 7e",
+          "description": "Structures, temps, règles et pièges d’usage.",
+          "icone": "🇬🇧",
+          "niveau": "7e Année",
+          "version": 1,
+          "fichiers": [
+            "HAnglais7.ecolia"
           ]
         },
         {
-          "id": "h_7e_svt",
-          "nom": "Biologie / SVT",
-          "cours": [
-            {
-              "id": "h_svt7",
-              "titre": "SVT 7e",
-              "description": "Lecture de schémas, fonctions, classifications et raisonnement biologique.",
-              "icone": "🌱",
-              "niveau": "7e Année",
-              "version": 1,
-              "fichiers": [
-                "HSVT7.ecolia"
-              ]
-            }
+          "id": "h_svt7",
+          "titre": "SVT 7e",
+          "description": "Lecture de schémas, fonctions, classifications et raisonnement biologique.",
+          "icone": "🌱",
+          "niveau": "7e Année",
+          "version": 1,
+          "fichiers": [
+            "HSVT7.ecolia"
           ]
         }
       ]
@@ -96,90 +67,60 @@
       "id": "h_8e",
       "nom": "8e Année",
       "icone": "📘",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_8e_maths",
-          "nom": "Mathématiques",
-          "cours": [
-            {
-              "id": "h_maths8",
-              "titre": "Mathématiques 8e",
-              "description": "Algèbre, équations, géométrie et statistiques.",
-              "icone": "🔢",
-              "niveau": "8e Année",
-              "version": 1,
-              "fichiers": [
-                "HMaths8.ecolia"
-              ]
-            }
+          "id": "h_maths8",
+          "titre": "Mathématiques 8e",
+          "description": "Algèbre, équations, géométrie et statistiques.",
+          "icone": "🔢",
+          "niveau": "8e Année",
+          "version": 1,
+          "fichiers": [
+            "HMaths8.ecolia"
           ]
         },
         {
-          "id": "h_8e_sciences",
-          "nom": "Sciences physiques et chimie",
-          "cours": [
-            {
-              "id": "h_sciences8",
-              "titre": "Sciences physiques et chimie 8e",
-              "description": "Lois, formules, transformations, réactions et résolution de problèmes.",
-              "icone": "🔬",
-              "niveau": "8e Année",
-              "version": 1,
-              "fichiers": [
-                "HSciences8.ecolia"
-              ]
-            }
+          "id": "h_sciences8",
+          "titre": "Sciences physiques et chimie 8e",
+          "description": "Lois, formules, transformations, réactions et résolution de problèmes.",
+          "icone": "🔬",
+          "niveau": "8e Année",
+          "version": 1,
+          "fichiers": [
+            "HSciences8.ecolia"
           ]
         },
         {
-          "id": "h_8e_francais",
-          "nom": "Français",
-          "cours": [
-            {
-              "id": "h_francais8",
-              "titre": "Français 8e",
-              "description": "Accords complexes, syntaxe et analyse grammaticale.",
-              "icone": "✍️",
-              "niveau": "8e Année",
-              "version": 1,
-              "fichiers": [
-                "HFrancais8.ecolia"
-              ]
-            }
+          "id": "h_francais8",
+          "titre": "Français 8e",
+          "description": "Accords complexes, syntaxe et analyse grammaticale.",
+          "icone": "✍️",
+          "niveau": "8e Année",
+          "version": 1,
+          "fichiers": [
+            "HFrancais8.ecolia"
           ]
         },
         {
-          "id": "h_8e_anglais",
-          "nom": "Anglais",
-          "cours": [
-            {
-              "id": "h_anglais8",
-              "titre": "Anglais 8e",
-              "description": "Temps, tournures, exceptions et contexte.",
-              "icone": "🇬🇧",
-              "niveau": "8e Année",
-              "version": 1,
-              "fichiers": [
-                "HAnglais8.ecolia"
-              ]
-            }
+          "id": "h_anglais8",
+          "titre": "Anglais 8e",
+          "description": "Temps, tournures, exceptions et contexte.",
+          "icone": "🇬🇧",
+          "niveau": "8e Année",
+          "version": 1,
+          "fichiers": [
+            "HAnglais8.ecolia"
           ]
         },
         {
-          "id": "h_8e_svt",
-          "nom": "Biologie / SVT",
-          "cours": [
-            {
-              "id": "h_svt8",
-              "titre": "SVT 8e",
-              "description": "Anatomie, physiologie, nutrition, mécanismes et cas d’application.",
-              "icone": "🌱",
-              "niveau": "8e Année",
-              "version": 1,
-              "fichiers": [
-                "HSVT8.ecolia"
-              ]
-            }
+          "id": "h_svt8",
+          "titre": "SVT 8e",
+          "description": "Anatomie, physiologie, nutrition, mécanismes et cas d’application.",
+          "icone": "🌱",
+          "niveau": "8e Année",
+          "version": 1,
+          "fichiers": [
+            "HSVT8.ecolia"
           ]
         }
       ]
@@ -188,107 +129,71 @@
       "id": "h_1e",
       "nom": "1ère Année des Humanités",
       "icone": "📙",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_1e_maths",
-          "nom": "Mathématiques",
-          "cours": [
-            {
-              "id": "h_mathsscientifiques1",
-              "titre": "Mathématiques 1e",
-              "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
-              "icone": "🔢",
-              "niveau": "1ère Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HMathsScientifiques1.ecolia"
-              ]
-            }
+          "id": "h_mathsscientifiques1",
+          "titre": "Mathématiques 1e",
+          "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
+          "icone": "🔢",
+          "niveau": "1ère Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HMathsScientifiques1.ecolia"
           ]
         },
         {
-          "id": "h_1e_physique",
-          "nom": "Physique",
-          "cours": [
-            {
-              "id": "h_physique1",
-              "titre": "Physique 1e",
-              "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
-              "icone": "⚙️",
-              "niveau": "1ère Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HPhysique1.ecolia"
-              ]
-            }
+          "id": "h_physique1",
+          "titre": "Physique 1e",
+          "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
+          "icone": "⚙️",
+          "niveau": "1ère Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HPhysique1.ecolia"
           ]
         },
         {
-          "id": "h_1e_chimie",
-          "nom": "Chimie",
-          "cours": [
-            {
-              "id": "h_chimie1",
-              "titre": "Chimie 1e",
-              "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
-              "icone": "⚛️",
-              "niveau": "1ère Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HChimie1.ecolia"
-              ]
-            }
+          "id": "h_chimie1",
+          "titre": "Chimie 1e",
+          "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
+          "icone": "⚛️",
+          "niveau": "1ère Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HChimie1.ecolia"
           ]
         },
         {
-          "id": "h_1e_tic",
-          "nom": "Informatique / TIC",
-          "cours": [
-            {
-              "id": "h_tic1",
-              "titre": "Informatique et TIC 1e",
-              "description": "Logique, algorithmes, outils numériques et cas pratiques.",
-              "icone": "💻",
-              "niveau": "1ère Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HTIC1.ecolia"
-              ]
-            }
+          "id": "h_tic1",
+          "titre": "Informatique et TIC 1e",
+          "description": "Logique, algorithmes, outils numériques et cas pratiques.",
+          "icone": "💻",
+          "niveau": "1ère Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HTIC1.ecolia"
           ]
         },
         {
-          "id": "h_1e_latin",
-          "nom": "Latin",
-          "cours": [
-            {
-              "id": "h_latin1",
-              "titre": "Latin 1e",
-              "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
-              "icone": "🏛️",
-              "niveau": "1ère Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HLatin1.ecolia"
-              ]
-            }
+          "id": "h_latin1",
+          "titre": "Latin 1e",
+          "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
+          "icone": "🏛️",
+          "niveau": "1ère Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HLatin1.ecolia"
           ]
         },
         {
-          "id": "h_1e_gestion",
-          "nom": "Comptabilité et économie",
-          "cours": [
-            {
-              "id": "h_gestion1",
-              "titre": "Comptabilité et économie 1e",
-              "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
-              "icone": "📊",
-              "niveau": "1ère Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HGestion1.ecolia"
-              ]
-            }
+          "id": "h_gestion1",
+          "titre": "Comptabilité et économie 1e",
+          "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
+          "icone": "📊",
+          "niveau": "1ère Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HGestion1.ecolia"
           ]
         }
       ]
@@ -297,107 +202,71 @@
       "id": "h_2e",
       "nom": "2e Année des Humanités",
       "icone": "📕",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_2e_maths",
-          "nom": "Mathématiques",
-          "cours": [
-            {
-              "id": "h_mathsscientifiques2",
-              "titre": "Mathématiques 2e",
-              "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
-              "icone": "🔢",
-              "niveau": "2e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HMathsScientifiques2.ecolia"
-              ]
-            }
+          "id": "h_mathsscientifiques2",
+          "titre": "Mathématiques 2e",
+          "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
+          "icone": "🔢",
+          "niveau": "2e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HMathsScientifiques2.ecolia"
           ]
         },
         {
-          "id": "h_2e_physique",
-          "nom": "Physique",
-          "cours": [
-            {
-              "id": "h_physique2",
-              "titre": "Physique 2e",
-              "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
-              "icone": "⚙️",
-              "niveau": "2e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HPhysique2.ecolia"
-              ]
-            }
+          "id": "h_physique2",
+          "titre": "Physique 2e",
+          "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
+          "icone": "⚙️",
+          "niveau": "2e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HPhysique2.ecolia"
           ]
         },
         {
-          "id": "h_2e_chimie",
-          "nom": "Chimie",
-          "cours": [
-            {
-              "id": "h_chimie2",
-              "titre": "Chimie 2e",
-              "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
-              "icone": "⚛️",
-              "niveau": "2e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HChimie2.ecolia"
-              ]
-            }
+          "id": "h_chimie2",
+          "titre": "Chimie 2e",
+          "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
+          "icone": "⚛️",
+          "niveau": "2e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HChimie2.ecolia"
           ]
         },
         {
-          "id": "h_2e_tic",
-          "nom": "Informatique / TIC",
-          "cours": [
-            {
-              "id": "h_tic2",
-              "titre": "Informatique et TIC 2e",
-              "description": "Logique, algorithmes, outils numériques et cas pratiques.",
-              "icone": "💻",
-              "niveau": "2e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HTIC2.ecolia"
-              ]
-            }
+          "id": "h_tic2",
+          "titre": "Informatique et TIC 2e",
+          "description": "Logique, algorithmes, outils numériques et cas pratiques.",
+          "icone": "💻",
+          "niveau": "2e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HTIC2.ecolia"
           ]
         },
         {
-          "id": "h_2e_latin",
-          "nom": "Latin",
-          "cours": [
-            {
-              "id": "h_latin2",
-              "titre": "Latin 2e",
-              "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
-              "icone": "🏛️",
-              "niveau": "2e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HLatin2.ecolia"
-              ]
-            }
+          "id": "h_latin2",
+          "titre": "Latin 2e",
+          "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
+          "icone": "🏛️",
+          "niveau": "2e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HLatin2.ecolia"
           ]
         },
         {
-          "id": "h_2e_gestion",
-          "nom": "Comptabilité et économie",
-          "cours": [
-            {
-              "id": "h_gestion2",
-              "titre": "Comptabilité et économie 2e",
-              "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
-              "icone": "📊",
-              "niveau": "2e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HGestion2.ecolia"
-              ]
-            }
+          "id": "h_gestion2",
+          "titre": "Comptabilité et économie 2e",
+          "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
+          "icone": "📊",
+          "niveau": "2e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HGestion2.ecolia"
           ]
         }
       ]
@@ -406,107 +275,71 @@
       "id": "h_3e",
       "nom": "3e Année des Humanités",
       "icone": "📓",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_3e_maths",
-          "nom": "Mathématiques",
-          "cours": [
-            {
-              "id": "h_mathsscientifiques3",
-              "titre": "Mathématiques 3e",
-              "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
-              "icone": "🔢",
-              "niveau": "3e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HMathsScientifiques3.ecolia"
-              ]
-            }
+          "id": "h_mathsscientifiques3",
+          "titre": "Mathématiques 3e",
+          "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
+          "icone": "🔢",
+          "niveau": "3e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HMathsScientifiques3.ecolia"
           ]
         },
         {
-          "id": "h_3e_physique",
-          "nom": "Physique",
-          "cours": [
-            {
-              "id": "h_physique3",
-              "titre": "Physique 3e",
-              "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
-              "icone": "⚙️",
-              "niveau": "3e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HPhysique3.ecolia"
-              ]
-            }
+          "id": "h_physique3",
+          "titre": "Physique 3e",
+          "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
+          "icone": "⚙️",
+          "niveau": "3e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HPhysique3.ecolia"
           ]
         },
         {
-          "id": "h_3e_chimie",
-          "nom": "Chimie",
-          "cours": [
-            {
-              "id": "h_chimie3",
-              "titre": "Chimie 3e",
-              "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
-              "icone": "⚛️",
-              "niveau": "3e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HChimie3.ecolia"
-              ]
-            }
+          "id": "h_chimie3",
+          "titre": "Chimie 3e",
+          "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
+          "icone": "⚛️",
+          "niveau": "3e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HChimie3.ecolia"
           ]
         },
         {
-          "id": "h_3e_tic",
-          "nom": "Informatique / TIC",
-          "cours": [
-            {
-              "id": "h_tic3",
-              "titre": "Informatique et TIC 3e",
-              "description": "Logique, algorithmes, outils numériques et cas pratiques.",
-              "icone": "💻",
-              "niveau": "3e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HTIC3.ecolia"
-              ]
-            }
+          "id": "h_tic3",
+          "titre": "Informatique et TIC 3e",
+          "description": "Logique, algorithmes, outils numériques et cas pratiques.",
+          "icone": "💻",
+          "niveau": "3e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HTIC3.ecolia"
           ]
         },
         {
-          "id": "h_3e_latin",
-          "nom": "Latin",
-          "cours": [
-            {
-              "id": "h_latin3",
-              "titre": "Latin 3e",
-              "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
-              "icone": "🏛️",
-              "niveau": "3e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HLatin3.ecolia"
-              ]
-            }
+          "id": "h_latin3",
+          "titre": "Latin 3e",
+          "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
+          "icone": "🏛️",
+          "niveau": "3e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HLatin3.ecolia"
           ]
         },
         {
-          "id": "h_3e_gestion",
-          "nom": "Comptabilité et économie",
-          "cours": [
-            {
-              "id": "h_gestion3",
-              "titre": "Comptabilité et économie 3e",
-              "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
-              "icone": "📊",
-              "niveau": "3e Année des Humanités",
-              "version": 1,
-              "fichiers": [
-                "HGestion3.ecolia"
-              ]
-            }
+          "id": "h_gestion3",
+          "titre": "Comptabilité et économie 3e",
+          "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
+          "icone": "📊",
+          "niveau": "3e Année des Humanités",
+          "version": 1,
+          "fichiers": [
+            "HGestion3.ecolia"
           ]
         }
       ]
@@ -515,107 +348,71 @@
       "id": "h_4e",
       "nom": "4e Année des Humanités (EXETAT)",
       "icone": "📔",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_4e_maths",
-          "nom": "Mathématiques",
-          "cours": [
-            {
-              "id": "h_mathsscientifiques4",
-              "titre": "Mathématiques 4e",
-              "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
-              "icone": "🔢",
-              "niveau": "4e Année des Humanités (EXETAT)",
-              "version": 1,
-              "fichiers": [
-                "HMathsScientifiques4.ecolia"
-              ]
-            }
+          "id": "h_mathsscientifiques4",
+          "titre": "Mathématiques 4e",
+          "description": "Algèbre, analyse, géométrie et méthodes de résolution selon la filière.",
+          "icone": "🔢",
+          "niveau": "4e Année des Humanités (EXETAT)",
+          "version": 1,
+          "fichiers": [
+            "HMathsScientifiques4.ecolia"
           ]
         },
         {
-          "id": "h_4e_physique",
-          "nom": "Physique",
-          "cours": [
-            {
-              "id": "h_physique4",
-              "titre": "Physique 4e",
-              "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
-              "icone": "⚙️",
-              "niveau": "4e Année des Humanités (EXETAT)",
-              "version": 1,
-              "fichiers": [
-                "HPhysique4.ecolia"
-              ]
-            }
+          "id": "h_physique4",
+          "titre": "Physique 4e",
+          "description": "Lois physiques, formules, modélisation et résolution de problèmes.",
+          "icone": "⚙️",
+          "niveau": "4e Année des Humanités (EXETAT)",
+          "version": 1,
+          "fichiers": [
+            "HPhysique4.ecolia"
           ]
         },
         {
-          "id": "h_4e_chimie",
-          "nom": "Chimie",
-          "cours": [
-            {
-              "id": "h_chimie4",
-              "titre": "Chimie 4e",
-              "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
-              "icone": "⚛️",
-              "niveau": "4e Année des Humanités (EXETAT)",
-              "version": 1,
-              "fichiers": [
-                "HChimie4.ecolia"
-              ]
-            }
+          "id": "h_chimie4",
+          "titre": "Chimie 4e",
+          "description": "Formules, équations, calculs, réactions et raisonnement chimique.",
+          "icone": "⚛️",
+          "niveau": "4e Année des Humanités (EXETAT)",
+          "version": 1,
+          "fichiers": [
+            "HChimie4.ecolia"
           ]
         },
         {
-          "id": "h_4e_tic",
-          "nom": "Informatique / TIC",
-          "cours": [
-            {
-              "id": "h_tic4",
-              "titre": "Informatique et TIC 4e",
-              "description": "Logique, algorithmes, outils numériques et cas pratiques.",
-              "icone": "💻",
-              "niveau": "4e Année des Humanités (EXETAT)",
-              "version": 1,
-              "fichiers": [
-                "HTIC4.ecolia"
-              ]
-            }
+          "id": "h_tic4",
+          "titre": "Informatique et TIC 4e",
+          "description": "Logique, algorithmes, outils numériques et cas pratiques.",
+          "icone": "💻",
+          "niveau": "4e Année des Humanités (EXETAT)",
+          "version": 1,
+          "fichiers": [
+            "HTIC4.ecolia"
           ]
         },
         {
-          "id": "h_4e_latin",
-          "nom": "Latin",
-          "cours": [
-            {
-              "id": "h_latin4",
-              "titre": "Latin 4e",
-              "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
-              "icone": "🏛️",
-              "niveau": "4e Année des Humanités (EXETAT)",
-              "version": 1,
-              "fichiers": [
-                "HLatin4.ecolia"
-              ]
-            }
+          "id": "h_latin4",
+          "titre": "Latin 4e",
+          "description": "Déclinaisons, cas, syntaxe, propositions, traduction et pièges grammaticaux.",
+          "icone": "🏛️",
+          "niveau": "4e Année des Humanités (EXETAT)",
+          "version": 1,
+          "fichiers": [
+            "HLatin4.ecolia"
           ]
         },
         {
-          "id": "h_4e_gestion",
-          "nom": "Comptabilité et économie",
-          "cours": [
-            {
-              "id": "h_gestion4",
-              "titre": "Comptabilité et économie 4e",
-              "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
-              "icone": "📊",
-              "niveau": "4e Année des Humanités (EXETAT)",
-              "version": 1,
-              "fichiers": [
-                "HGestion4.ecolia"
-              ]
-            }
+          "id": "h_gestion4",
+          "titre": "Comptabilité et économie 4e",
+          "description": "Écritures, calculs financiers, ratios et analyse de situations pratiques.",
+          "icone": "📊",
+          "niveau": "4e Année des Humanités (EXETAT)",
+          "version": 1,
+          "fichiers": [
+            "HGestion4.ecolia"
           ]
         }
       ]
@@ -624,25 +421,20 @@
       "id": "h_humanites_transversal",
       "nom": "Humanités — Matières transversales",
       "icone": "📚",
-      "sousCategories": [
+      "cours": [
         {
-          "id": "h_humanites_langues",
-          "nom": "Français et Anglais",
-          "cours": [
-            {
-              "id": "h_langueshumanites",
-              "titre": "Français et Anglais — Méthode et règles",
-              "description": "Analyse grammaticale, syntaxe, accords, structures et pièges linguistiques.",
-              "icone": "🗣️",
-              "niveau": "1ère à 4e Humanités",
-              "version": 1,
-              "fichiers": [
-                "HLanguesHumanites.ecolia"
-              ]
-            }
+          "id": "h_langueshumanites",
+          "titre": "Français et Anglais — Méthode et règles",
+          "description": "Analyse grammaticale, syntaxe, accords, structures et pièges linguistiques.",
+          "icone": "🗣️",
+          "niveau": "1ère à 4e Humanités",
+          "version": 1,
+          "fichiers": [
+            "HLanguesHumanites.ecolia"
           ]
         }
       ]
     }
   ]
-}
+        }
+      
